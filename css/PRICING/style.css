@@ -89,12 +89,18 @@ body {
           box-shadow: 2px 2px 5px gray;
 }
 
-.pricing .s1 .prix, .pricing .s2 .prix, .pricing .s3 .prix {
-  max-width: 336px;
+.pricing .s1 .heading, .pricing .s2 .heading, .pricing .s3 .heading {
   font-size: 24px;
+  padding: 2rem 0rem;
+  font-weight: bold;
+}
+
+.pricing .s1 .prix, .pricing .s2 .prix, .pricing .s3 .prix {
+  font-size: 24px;
+  padding: 1rem 0rem;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#2f2fc2), to(#75dfff));
-  background-image: linear-gradient(to top, #2f2fc2, #75dfff);
+  background-color: #f0f0f0;
+  width: 100%;
 }
 
 .pricing .s1 .ul, .pricing .s2 .ul, .pricing .s3 .ul {

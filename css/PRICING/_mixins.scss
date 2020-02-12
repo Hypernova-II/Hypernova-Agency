@@ -7,12 +7,18 @@
         border-radius: 20px;
         margin: 1rem;
         box-shadow: 2px 2px 5px gray;
-        .prix{
-            max-width: 336px;
+        .heading{
             font-size: 24px;
+            padding: 2rem 0rem;
+            font-weight: bold;
+        }
+        .prix{
+            font-size: 24px;
+            padding: 1rem 0rem;
+
             text-align: center;
-            background-image: linear-gradient(to top, rgb(47, 47, 194) , rgb(117, 223, 255));
-          
+            background-color: #f0f0f0;
+            width: 100%;
          }
         .ul{
            line-height: 36px;
