@@ -78,7 +78,7 @@ body {
 .pricing .s1, .pricing .s2, .pricing .s3 {
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 336px;
+  width: 360px;
   border: 1px solid black;
   display: -ms-grid;
   display: grid;
@@ -87,6 +87,21 @@ body {
   margin: 1rem;
   -webkit-box-shadow: 2px 2px 5px gray;
           box-shadow: 2px 2px 5px gray;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.pricing .s1:hover, .pricing .s2:hover, .pricing .s3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pricing .s1:hover .prix, .pricing .s2:hover .prix, .pricing .s3:hover .prix {
+  background-color: #658da7;
+}
+
+.pricing .s1:hover .detail, .pricing .s2:hover .detail, .pricing .s3:hover .detail {
+  background-color: #658da7;
 }
 
 .pricing .s1 .heading, .pricing .s2 .heading, .pricing .s3 .heading {
@@ -101,10 +116,17 @@ body {
   text-align: center;
   background-color: #f0f0f0;
   width: 100%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .pricing .s1 .ul, .pricing .s2 .ul, .pricing .s3 .ul {
   line-height: 36px;
+}
+
+.pricing .s1 .ul hr, .pricing .s2 .ul hr, .pricing .s3 .ul hr {
+  width: 120%;
+  margin-left: -3rem;
 }
 
 .pricing .s1 .ul li, .pricing .s2 .ul li, .pricing .s3 .ul li {
@@ -112,13 +134,19 @@ body {
 }
 
 .pricing .s1 .detail, .pricing .s2 .detail, .pricing .s3 .detail {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f2fc2), to(#75dfff));
-  background-image: linear-gradient(to bottom, #2f2fc2, #75dfff);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
   width: 90px;
+  background-color: #f0f0f0;
   height: 42px;
+  border-radius: 13px;
+  margin-bottom: 1.5rem;
   padding: 1rem 0rem 0rem 2rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.pricing .s1 .detail:hover, .pricing .s2 .detail:hover, .pricing .s3 .detail:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .pricing .s1 .detail a, .pricing .s2 .detail a, .pricing .s3 .detail a {
@@ -176,10 +204,10 @@ body {
     grid-gap: 1rem;
   }
   .pricing .s1 {
-    width: 336px;
+    width: 70%;
   }
   .pricing .s2 {
-    width: 336px;
+    width: 70%;
   }
   .pricing .s3 {
     -ms-grid-column: 3;
@@ -188,6 +216,7 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
