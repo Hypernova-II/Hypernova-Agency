@@ -89,16 +89,12 @@ body {
           box-shadow: 2px 2px 5px gray;
 }
 
-.pricing .s1 .pack, .pricing .s2 .pack, .pricing .s3 .pack {
+.pricing .s1 .prix, .pricing .s2 .prix, .pricing .s3 .prix {
   max-width: 336px;
   font-size: 24px;
   text-align: center;
-  padding-top: 3rem;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#2f2fc2), to(#75dfff));
   background-image: linear-gradient(to top, #2f2fc2, #75dfff);
-  border-radius: 50%;
-  height: 100px;
-  width: 150px;
 }
 
 .pricing .s1 .ul, .pricing .s2 .ul, .pricing .s3 .ul {
