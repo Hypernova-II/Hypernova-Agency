@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+  .container{
+      font-family: poppins, sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+  }
+  .line{
+    background: rgb(10, 10, 10);
+    width: 20rem;
+    height: 3px;
+    border-radius: 1rem;
+    margin: auto;
+  }
+  .titre{
+    font-size: 24px;
+    text-align: center;
+  }
+  .Disp{
+    font-size: 16px;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2REM;
+    margin-top: 3rem;
+    color: rgb(10, 10, 10)
+  }
+  .box1 img{
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+  .box2 img {
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+  .box3 img {
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+  .box4 img {
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+  .box5 img{
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+  .box6 img {
+      border-radius: 50%;
+      height:30vh;
+      margin: 3rem 0rem 0rem;
+  }
+
+
+
+
