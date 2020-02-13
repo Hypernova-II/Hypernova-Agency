@@ -18,27 +18,48 @@ body {
             background-color: #c1d5db;
             margin: 20px auto;
             width: 10%;
-            height: 3px;
+            height: 5px;
             border: none;
         }
         .service-sous-titre {
             text-align: center;
             color: #6f6E6E;
-            font-style: oblique;
+            font-weight: 400;
         }
     }
-    .service-grid-cards {
+    .service-flex-cards {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        background-color: rgba hsl(197, 6%, 78%);
+        // background-color: rgba hsl(197, 6%, 78%);
         .service-cards {
-            display: inline;
+            display: inline-block;
             max-width: 28%;
             background-color: #fff;
             border: none;
             border-radius: 10px;
             margin: 2%;
+            .service-image {
+                width: 35%;
+                float: left;
+            }
+            .service-titel {
+                display: inline;
+                color: #658DA7;
+                font-weight: 700;
+                font-size: 20px;
+                text-align: left;
+            }
+            .service-description {
+                text-align: justify;
+                color: #6f6E6E;
+                max-height: 40%;
+            }
+            .service-info {
+                display: inline;
+                color: #c1d5db;
+                float: right;
+            }
         }
     }
 }
