@@ -1,0 +1,27 @@
+footer .f-container .sponsor {
+  background-color: #F2F2F2;
+  padding: 20px 0 15px 0px;
+}
+
+footer .f-container .sponsor .s-img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .f-container .sponsor .s-img img {
+  width: 20%;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+footer .f-container .contact-us {
+  background-image: url(../../img/footer-background.png);
+  background-size: 100%;
+}
+/*# sourceMappingURL=footer.css.map */

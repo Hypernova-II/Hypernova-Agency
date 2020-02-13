@@ -4,7 +4,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+a {
+    text-decoration: none;
+}
+
+#service .container {
     width: 90%;
     background-color: rgba ( hsl(197, 6%, 78%));
     margin: auto;
@@ -25,40 +29,50 @@ body {
             text-align: center;
             color: #6f6E6E;
             font-weight: 400;
+            font-size: large;
         }
     }
     .service-flex-cards {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        // background-color: rgba hsl(197, 6%, 78%);
+        background-color: rgba hsl(197, 6%, 78%);
+        background-color: #e7e7e7;
         .service-cards {
             display: inline-block;
-            max-width: 28%;
-            background-color: #fff;
+            width: 28%;
+            background-color: #f3f3f3;
             border: none;
             border-radius: 10px;
             margin: 2%;
             .service-image {
-                width: 35%;
                 float: left;
             }
             .service-titel {
-                display: inline;
+                display: inline-flex;
                 color: #658DA7;
+                width: 40%;
                 font-weight: 700;
-                font-size: 20px;
-                text-align: left;
+                font-size: 18px;
+                padding-top: 2em;
+                text-align: center;
             }
             .service-description {
                 text-align: justify;
                 color: #6f6E6E;
-                max-height: 40%;
+                width: 60%;
+                display: none;
             }
             .service-info {
-                display: inline;
-                color: #c1d5db;
+                display: block;
                 float: right;
+                padding: 5% 2%;
+                a {
+                    color: #6f6E6E;
+                }
+                a:hover {
+                    color: #e7e7e7;
+                }
             }
         }
     }
