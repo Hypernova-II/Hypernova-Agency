@@ -1,0 +1,22 @@
+footer {
+    .f-container {
+        .sponsor {
+            background-color: #F2F2F2;
+            padding: 20px 0 15px 0px;
+            .s-img {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                    width: 20%;
+                    margin-right: 20px;
+                    margin-bottom: 5px;
+                }
+            }  
+        }
+        .contact-us {
+            background-image: url(../../img/footer-background.png);
+            background-size: 100%;
+        }
+    }
+}
