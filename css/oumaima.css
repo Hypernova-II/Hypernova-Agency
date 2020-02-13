@@ -35,23 +35,6 @@
       height:20vh;
       margin: 3rem 0rem 0rem;
   }
-  .box3:hover,
-  .box1:hover,
-  .box2:hover,
-  .box4:hover,
-  .box5:hover,
-  .box6:hover{
-      transform: scale(1.2);
-  }
-  .box3 ,
-  .box1,
-  .box2,
-  .box4,
-  .box5,
-  .box6{
-    transition-duration: 0.6s;
-
-  }
   .box2 img {
       border-radius: 50%;
       height:20vh;
@@ -62,6 +45,7 @@
       height:20vh;
       margin: 3rem 0rem 0rem;
   }
+   
   .box4 img {
       border-radius: 50%;
       height:20vh;
