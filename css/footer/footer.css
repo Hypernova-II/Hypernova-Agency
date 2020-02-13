@@ -1,12 +1,18 @@
 footer .f-container .sponsor {
   background-color: #F2F2F2;
   padding: 20px 0 15px 0px;
+  margin-top: 40px;
+  width: 100%;
 }
 
 footer .f-container .sponsor .s-img {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  width: 90%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -15,14 +21,17 @@ footer .f-container .sponsor .s-img {
 }
 
 footer .f-container .sponsor .s-img img {
-  width: 20%;
-  margin-right: 20px;
+  width: 14%;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 5px;
 }
 
 footer .f-container .contact-us {
-  background-image: url(../../img/footer-background.png);
-  background-size: 100%;
+  background-image: url(../../img/footer-background-tablet.png);
+  height: 1291px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .f-container .contact-us footer-logo {
