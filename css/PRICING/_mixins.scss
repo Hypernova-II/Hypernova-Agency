@@ -1,32 +1,58 @@
-@mixin section {
+@mixin pricings {
+        justify-self: center;
+        width: 360px;
         border: 1px solid black;
         display: grid;
         justify-items: center;
         border-radius: 20px;
         margin: 1rem;
         box-shadow: 2px 2px 5px gray;
-        .pack{
+        transition-duration: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+            .prix{
+                background-color: #658da7;
+            }
+            .detail{
+                background-color: #658da7;
+            }
+        }
+        .heading{
             font-size: 24px;
+            padding: 2rem 0rem;
+            font-weight: bold;
+        }
+        .prix{
+            font-size: 24px;
+            padding: 1rem 0rem;
+
             text-align: center;
-            padding-top: 3rem;
-            background-image: linear-gradient(to top, blue , rgb(117, 223, 255));
-            border-radius: 50%;
-            height: 100px;
-            width: 150px;
+            background-color: #f0f0f0;
+            width: 100%;
+            transition-duration: 0.6s;
          }
         .ul{
            line-height: 36px;
+           hr{
+               width: 120%;
+               margin-left: -3rem;
+            }
             li{
                 list-style-type: none;
             }
         }
         .detail{
-            background-image: linear-gradient(to bottom, blue , rgb(117, 223, 255));
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-                width: 90px;   
+                width: 90px; 
+                background-color: #f0f0f0;  
                 height: 42px;
+                border-radius: 13px;
+                margin-bottom: 1.5rem;
                 padding: 1rem 0rem 0rem 2rem;
+                transition-duration: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+              
+                }
 
 
             a{
