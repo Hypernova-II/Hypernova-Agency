@@ -8,19 +8,19 @@ a {
   text-decoration: none;
 }
 
-.container {
+#service .container {
   width: 90%;
   background-color: rgba #c4c8ca;
   margin: auto;
   text-align: center;
 }
 
-.container article:first-child h2 {
+#service .container article:first-child h2 {
   color: #658DA7;
   font-weight: 600;
 }
 
-.container article:first-child .service-line {
+#service .container article:first-child .service-line {
   background-color: #c1d5db;
   margin: 20px auto;
   width: 10%;
@@ -28,15 +28,14 @@ a {
   border: none;
 }
 
-.container article:first-child .service-sous-titre {
+#service .container article:first-child .service-sous-titre {
+  text-align: center;
   color: #6f6E6E;
-  padding: 1em;
   font-weight: 400;
-  font-variant: small-caps;
-  font-size: 2em;
+  font-size: large;
 }
 
-.container .service-flex-cards {
+#service .container .service-flex-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,113 +45,53 @@ a {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #CDCDCD;
+  background-color: rgba #c4c8ca;
+  background-color: #e7e7e7;
 }
 
-.container .service-flex-cards .service-cards {
+#service .container .service-flex-cards .service-cards {
   display: inline-block;
   width: 28%;
-  height: 200px;
   background-color: #f3f3f3;
-  border: transparent;
+  border: none;
   border-radius: 10px;
   margin: 2%;
 }
 
-.container .service-flex-cards .service-cards .service-image {
+#service .container .service-flex-cards .service-cards .service-image {
   float: left;
-  width: 55%;
-  height: 100%;
 }
 
-.container .service-flex-cards .service-cards .service-titel {
+#service .container .service-flex-cards .service-cards .service-titel {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #658DA7;
   width: 40%;
   font-weight: 700;
-  font-size: 20px;
-  padding: 5% 2%;
+  font-size: 18px;
+  padding-top: 2em;
   text-align: center;
 }
 
-.container .service-flex-cards .service-cards .service-description {
+#service .container .service-flex-cards .service-cards .service-description {
   text-align: justify;
-  color: #ffffff;
-  width: 28%;
-  height: 200px;
-  border: 10px black solid;
-  background-color: coral;
+  color: #6f6E6E;
+  width: 60%;
   display: none;
 }
 
-.container .service-flex-cards .service-cards .service-info {
+#service .container .service-flex-cards .service-cards .service-info {
   display: block;
   float: right;
-  padding: 10% 2%;
+  padding: 5% 2%;
 }
 
-.container .service-flex-cards .service-cards .service-info a {
+#service .container .service-flex-cards .service-cards .service-info a {
   color: #6f6E6E;
 }
 
-.container .service-flex-cards .service-cards .service-info a:hover {
+#service .container .service-flex-cards .service-cards .service-info a:hover {
   color: #e7e7e7;
-}
-
-.container .service-presentation {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  margin-top: 3%;
-}
-
-.container .service-presentation .service-pre-part1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.container .service-presentation .service-pre-part1 h3 {
-  font-size: 3em;
-  text-align: left;
-}
-
-.container .service-presentation .service-pre-part1 .text1 {
-  margin-top: 5%;
-  font-size: 24px;
-  text-align: left;
-}
-
-.container .service-presentation .service-pre-part1 .service-pre-btn {
-  margin-top: 5%;
-  background-color: #658da7;
-  border-radius: 30px;
-  border: none;
-  width: 40%;
-  height: 2em;
-  font-size: 2em;
-}
-
-.container .service-presentation .service-pre-part1 .service-pre-btn:hover {
-  width: 60%;
-  background-color: #658da7;
-  color: white;
-  float: left;
-  cursor: pointer;
-}
-
-.container .service-presentation .service-pre-part2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.container .service-presentation .service-pre-part2 img {
-  width: 80%;
-  height: 400px;
-  float: right;
 }
 /*# sourceMappingURL=style.css.map */
