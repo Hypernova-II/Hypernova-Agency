@@ -20,17 +20,17 @@ body {
   background-color: #c1d5db;
   margin: 20px auto;
   width: 10%;
-  height: 3px;
+  height: 5px;
   border: none;
 }
 
 .container article:first-child .service-sous-titre {
   text-align: center;
   color: #6f6E6E;
-  font-style: oblique;
+  font-weight: 400;
 }
 
-.container .service-grid-cards {
+.container .service-flex-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,15 +40,39 @@ body {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: rgba #c4c8ca;
 }
 
-.container .service-grid-cards .service-cards {
-  display: inline;
+.container .service-flex-cards .service-cards {
+  display: inline-block;
   max-width: 28%;
   background-color: #fff;
   border: none;
   border-radius: 10px;
   margin: 2%;
+}
+
+.container .service-flex-cards .service-cards .service-image {
+  width: 35%;
+  float: left;
+}
+
+.container .service-flex-cards .service-cards .service-titel {
+  display: inline;
+  color: #658DA7;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+}
+
+.container .service-flex-cards .service-cards .service-description {
+  text-align: justify;
+  color: #6f6E6E;
+  max-height: 40%;
+}
+
+.container .service-flex-cards .service-cards .service-info {
+  display: inline;
+  color: #c1d5db;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
