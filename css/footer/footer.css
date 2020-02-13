@@ -24,4 +24,8 @@ footer .f-container .contact-us {
   background-image: url(../../img/footer-background.png);
   background-size: 100%;
 }
+
+footer .f-container .contact-us footer-logo {
+  display: inline;
+}
 /*# sourceMappingURL=footer.css.map */
