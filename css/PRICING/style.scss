@@ -78,6 +78,9 @@ body {
 
         .title {
             grid-column: 1/5;
+            @include desktop{
+                font-size: 32px;
+            }
         }
     }
 
@@ -93,6 +96,9 @@ body {
 
     .title {
         text-align: center;
+        @include desktop{
+            font-size: 32px;
+        }
     }
 
     .s1,

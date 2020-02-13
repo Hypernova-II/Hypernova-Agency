@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    background-color: rgba ( hsl(197, 6%, 78%));
+    margin: auto;
+    text-align: center;
+    article:first-child {
+        h2 {
+            color: #658DA7;
+            font-weight: 600;
+        }
+        .service-line {
+            background-color: #c1d5db;
+            margin: 20px auto;
+            width: 10%;
+            height: 5px;
+            border: none;
+        }
+        .service-sous-titre {
+            color: #6f6E6E;
+            padding: 1em;
+            font-weight: 400;
+            font-variant: small-caps;
+            font-size: 2em;
+        }
+    }
+    .service-flex-cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: #CDCDCD;
+        .service-cards {
+            display: inline-block;
+            width: 28%;
+            height: 200px;
+            background-color: #f3f3f3;
+            border: transparent;
+            border-radius: 10px;
+            margin: 2%;
+            .service-image {
+                float: left;
+                width: 55%;
+                height: 100%;
+            }
+            .service-titel {
+                display: inline-flex;
+                color: #658DA7;
+                width: 40%;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 5% 2%;
+                text-align: center;
+            }
+            .service-description {
+                text-align: justify;
+                color: #ffffff;
+                width: 28%;
+                height: 200px;
+                border: 10px black solid;
+                background-color: coral;
+                display: none;
+            }
+            .service-info {
+                display: block;
+                float: right;
+                padding: 10% 2%;
+                a {
+                    color: #6f6E6E;
+                }
+                a:hover {
+                    color: #e7e7e7;
+                }
+            }
+        }
+    }
+    .service-presentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 3%;
+        .service-pre-part1 {
+            grid-column: 1/2;
+            h3 {
+                font-size: 3em;
+                text-align: left;
+            }
+            .text1 {
+                margin-top: 5%;
+                font-size: 24px;
+                text-align: left;
+            }
+            .service-pre-btn {
+                margin-top: 5%;
+                background-color: #658da7;
+                border-radius: 30px;
+                border: none;
+                width: 40%;
+                height: 2em;
+                font-size: 2em;
+            }
+            .service-pre-btn:hover {
+                width: 60%;
+                background-color: #658da7;
+                color: white;
+                float: left;
+                cursor: pointer;
+            }
+        }
+        .service-pre-part2 {
+            grid-column: 2/3;
+            img {
+                width: 80%;
+                height: 400px;
+                float: right;
+            }
+        }
+    }
+}

@@ -20,11 +20,14 @@ header .bg {
 
 @media only screen and (min-width: 1440px) {
   header .bg {
-    top: -130px;
+    top: -200px;
+    left: -5px;
   }
 }
 
 header .bg video {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   height: 450px;
 }
 
@@ -62,6 +65,13 @@ header nav {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  header nav .logo img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
 header nav .menu {
   width: 100%;
   -webkit-box-pack: justify;
@@ -79,7 +89,7 @@ header nav .menu .ul {
 }
 
 header nav .menu .ul ul .il {
-  margin: 2rem;
+  margin: 3rem;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -172,6 +182,7 @@ header .paragraphe {
 }
 
 header .button button {
+  font-family: 'Poppins', sans-serif;
   background-color: #658da7;
   border: none;
   border-radius: 30px;
