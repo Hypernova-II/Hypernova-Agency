@@ -1,12 +1,12 @@
 @mixin pricings {
         justify-self: center;
         width: 360px;
-        border: 1px solid black;
+        border:none;
         display: grid;
         justify-items: center;
         border-radius: 20px;
-        margin: 1rem;
-        box-shadow: 2px 2px 5px gray;
+        margin: 2.5rem 0rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         transition-duration: 0.3s;
         &:hover{
             transform: scale(1.1);

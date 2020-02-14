@@ -20,12 +20,24 @@ body {
   justify-items: center;
 }
 
+@media only screen and (min-width: 1440px) {
+  .testemoinial .person {
+    margin-top: 2rem;
+  }
+}
+
 .testemoinial .person .name {
   font-size: 24px;
 }
 
 .testemoinial .person img {
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .testemoinial .person img {
+    height: 25vh;
+  }
 }
 
 .testemoinial .commentaire {
@@ -37,8 +49,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   .testemoinial {
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     grid-gap: 1rem;
@@ -65,6 +77,26 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .testemoinial {
+    -ms-grid-columns: 30% 60% 10%;
+        grid-template-columns: 30% 60% 10%;
+    font-size: 22px;
+    margin-right: 3rem;
+  }
+  .testemoinial .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-width: 1440px) {
+  .testemoinial .title {
+    font-size: 32px;
+  }
+}
+
 .pricing {
   display: -ms-grid;
   display: grid;
@@ -75,42 +107,60 @@ body {
   text-align: center;
 }
 
-.pricing .s1, .pricing .s2, .pricing .s3 {
+@media only screen and (min-width: 1440px) {
+  .pricing .title {
+    font-size: 32px;
+  }
+}
+
+.pricing .s1,
+.pricing .s2,
+.pricing .s3 {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 360px;
-  border: 1px solid black;
+  border: none;
   display: -ms-grid;
   display: grid;
   justify-items: center;
   border-radius: 20px;
-  margin: 1rem;
-  -webkit-box-shadow: 2px 2px 5px gray;
-          box-shadow: 2px 2px 5px gray;
+  margin: 2.5rem 0rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
 
-.pricing .s1:hover, .pricing .s2:hover, .pricing .s3:hover {
+.pricing .s1:hover,
+.pricing .s2:hover,
+.pricing .s3:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.pricing .s1:hover .prix, .pricing .s2:hover .prix, .pricing .s3:hover .prix {
+.pricing .s1:hover .prix,
+.pricing .s2:hover .prix,
+.pricing .s3:hover .prix {
   background-color: #658da7;
 }
 
-.pricing .s1:hover .detail, .pricing .s2:hover .detail, .pricing .s3:hover .detail {
+.pricing .s1:hover .detail,
+.pricing .s2:hover .detail,
+.pricing .s3:hover .detail {
   background-color: #658da7;
 }
 
-.pricing .s1 .heading, .pricing .s2 .heading, .pricing .s3 .heading {
+.pricing .s1 .heading,
+.pricing .s2 .heading,
+.pricing .s3 .heading {
   font-size: 24px;
   padding: 2rem 0rem;
   font-weight: bold;
 }
 
-.pricing .s1 .prix, .pricing .s2 .prix, .pricing .s3 .prix {
+.pricing .s1 .prix,
+.pricing .s2 .prix,
+.pricing .s3 .prix {
   font-size: 24px;
   padding: 1rem 0rem;
   text-align: center;
@@ -120,20 +170,28 @@ body {
           transition-duration: 0.6s;
 }
 
-.pricing .s1 .ul, .pricing .s2 .ul, .pricing .s3 .ul {
+.pricing .s1 .ul,
+.pricing .s2 .ul,
+.pricing .s3 .ul {
   line-height: 36px;
 }
 
-.pricing .s1 .ul hr, .pricing .s2 .ul hr, .pricing .s3 .ul hr {
+.pricing .s1 .ul hr,
+.pricing .s2 .ul hr,
+.pricing .s3 .ul hr {
   width: 120%;
   margin-left: -3rem;
 }
 
-.pricing .s1 .ul li, .pricing .s2 .ul li, .pricing .s3 .ul li {
+.pricing .s1 .ul li,
+.pricing .s2 .ul li,
+.pricing .s3 .ul li {
   list-style-type: none;
 }
 
-.pricing .s1 .detail, .pricing .s2 .detail, .pricing .s3 .detail {
+.pricing .s1 .detail,
+.pricing .s2 .detail,
+.pricing .s3 .detail {
   width: 90px;
   background-color: #f0f0f0;
   height: 42px;
@@ -144,12 +202,16 @@ body {
           transition-duration: 0.5s;
 }
 
-.pricing .s1 .detail:hover, .pricing .s2 .detail:hover, .pricing .s3 .detail:hover {
+.pricing .s1 .detail:hover,
+.pricing .s2 .detail:hover,
+.pricing .s3 .detail:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.pricing .s1 .detail a, .pricing .s2 .detail a, .pricing .s3 .detail a {
+.pricing .s1 .detail a,
+.pricing .s2 .detail a,
+.pricing .s3 .detail a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -159,7 +221,6 @@ body {
   .pricing {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
   }
   .pricing .title {
     -ms-grid-column: 1;
@@ -201,7 +262,7 @@ body {
   .pricing {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-row-gap: 2rem;
   }
   .pricing .s1 {
     width: 70%;
