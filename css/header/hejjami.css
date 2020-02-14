@@ -3,45 +3,40 @@ header {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  background-image: url(../../img/testbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider 15s infinite;
+          animation: slider 15s infinite;
 }
 
-header .bg {
-  z-index: -1;
-  position: absolute;
-  left: -425px;
-  top: -80px;
-}
-
-@media only screen and (min-width: 768px) {
-  header .bg {
-    left: 0px;
+@-webkit-keyframes slider {
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
+  }
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
+  }
+  75% {
+    background-image: url(../../img/testbg3.jpg);
+  }
+  100% {
+    background-image: url(../../img/testbg.jpg);
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  header .bg {
-    top: -200px;
-    left: -5px;
+@keyframes slider {
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
   }
-}
-
-header .bg video {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  height: 450px;
-}
-
-@media only screen and (min-width: 768px) {
-  header .bg video {
-    height: 435px;
-    width: 768px;
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
   }
-}
-
-@media only screen and (min-width: 1440px) {
-  header .bg video {
-    height: 80%;
-    width: 100%;
+  75% {
+    background-image: url(../../img/testbg3.jpg);
+  }
+  100% {
+    background-image: url(../../img/testbg.jpg);
   }
 }
 
@@ -89,7 +84,7 @@ header nav .menu .ul {
 }
 
 header nav .menu .ul ul .il {
-  margin: 3rem;
+  margin: 2rem;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -157,6 +152,7 @@ header .title {
 @media only screen and (min-width: 768px) {
   header .title {
     font-size: 24px;
+    max-width: 70%;
   }
 }
 
@@ -174,11 +170,22 @@ header .paragraphe {
   padding: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  header .paragraphe {
+    font-size: 24px;
+    max-width: 50%;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   header .paragraphe {
     font-size: 24px;
     max-width: 50%;
   }
+}
+
+header .button {
+  margin-bottom: 2rem;
 }
 
 header .button button {
@@ -190,6 +197,14 @@ header .button button {
   font-weight: bold;
   width: 30vw;
   height: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .button button {
+    font-size: 24px;
+    width: 20vw;
+    height: 45px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

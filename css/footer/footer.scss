@@ -3,23 +3,55 @@ footer {
         .sponsor {
             background-color: #F2F2F2;
             padding: 20px 0 15px 0px;
+            margin-top: 40px;
+            width: 100%;
             .s-img {
-                display: inline-flex;
+                width: 90%;
+                margin: auto;
+                justify-content: space-around;
+                display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 img {
-                    width: 20%;
-                    margin-right: 20px;
+                    width: 14%;
+                    margin-right: 10px;
+                    margin-left: 10px;
                     margin-bottom: 5px;
                 }
             }  
         }
         .contact-us {
-            background-image: url(../../img/footer-background.png);
-            background-size: 100%;
-            footer-logo {
-                display: inline;
+            background-image: url(../../img/footer-background-tablet.png);
+            // background-size: 100%;
+            height: 1291px;
+            background-repeat: no-repeat;
+            background-size:cover ;
+            .footer-logo {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                padding-top: 50px;
+                color: white;
+                font-weight: lighter;
+                margin-bottom: 30px;
+                img {
+                    float: right;
+                    padding-right: 10px;
+                }
             }
+        }
+        p{
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            color: #CDCDCD;
+            margin-bottom: 60px;
+        }
+        .f-line {
+            height: 0.75px;
+            background-color: #CDCDCD ;
+            width: 80%;
+            margin: auto;
+            border-radius: 50%;
         }
     }
 }

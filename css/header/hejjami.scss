@@ -16,34 +16,26 @@ header{
     font-family: 'Poppins', sans-serif;
     display: grid;
     justify-items: center;
-    .bg{
-        z-index: -1;
-        position: absolute;
-        left: -425px;
-        top: -80px;
-        @include TAB{
-            left: 0px;
+    background-image: url(../../img/testbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 15s infinite;
+    @keyframes slider {
+        25%{
+            background-image: url(../../img/teastbg2.jpg);
         }
-        @include desktop{
-            top: -200px;
-            left: -5px;
+        50%{
+            background-image: url(../../img/bg-header4.jpg);
         }
-
-        video{
-            filter: blur(5px) ;
-            height: 450px;
-            @include TAB{
-                height: 435px;
-                width: 768px;
-            }
-            @include desktop(){
-                height: 80%;
-                width: 100%;
-            }
-
+        75%{
+            background-image: url(../../img/testbg3.jpg);
         }
-
+        100%{
+            background-image: url(../../img/testbg.jpg);
+        }
+        
     }
+    
     nav{
         width: 90%;
         display: grid;
@@ -72,7 +64,7 @@ header{
                 font-weight: bold;
                 ul{
                     .il{
-                        margin: 3rem;
+                        margin: 2rem;
                     }
             }
                 @include desktop(){
@@ -121,6 +113,7 @@ header{
         color: white;
         @include TAB(){
             font-size: 24px;
+            max-width: 70%;
         }
         @include desktop(){
             font-size: 28px;
@@ -132,6 +125,11 @@ header{
         text-align: center;
         color: white;
         padding: 1rem;
+        @include TAB(){
+            font-size: 24px;
+
+            max-width: 50%;
+        }
         @include desktop(){
             font-size: 24px;
 
@@ -139,6 +137,7 @@ header{
         }
     }
     .button{
+        margin-bottom:2rem;
         button{
             font-family: 'Poppins', sans-serif;
             background-color: #658da7;
@@ -148,6 +147,12 @@ header{
             font-weight: bold;
             width: 30vw;
             height: 35px;
+            @include TAB(){
+                font-size: 24px;
+                width: 20vw;
+                height: 45px;
+                
+            }
             @include desktop(){
                 font-size: 24px;
                 width: 20vw;
@@ -164,4 +169,5 @@ header{
         width: 100%;
         height: 100vh;
     }
+    
 }
