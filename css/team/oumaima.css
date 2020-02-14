@@ -10,16 +10,17 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgb(10, 10, 10);
+    width: 100%;
   }
   .line{
     background: rgb(10, 10, 10);
-    width: 20rem;
+    width: 15rem;
     height: 3px;
     border-radius: 1rem;
     margin: auto;
   }
   .titre{
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
   }
   .Disp{
@@ -86,7 +87,11 @@
   }
   .nos-clients{
       background-color: lightgray;
-      margin-top: 2rem;
+      margin-top: 4rem;
+      padding: 4rem 0rem 4rem 0rem;
+  }
+  .clients{
+      margin-top: 3rem;
   }
   @media only screen and (min-width: 768px){
         .article{
@@ -94,7 +99,7 @@
                     display: grid;
                    grid-template-columns: 1fr 1fr;
                    grid-template-rows: 1fr 1fr 1fr;
-        
+                    
                 }
         .clients{
             display: grid;
@@ -117,10 +122,12 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            width: 90%;
+            margin: auto;
         }
         .clients{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
            grid-template-rows: 1fr;
         }
         .img4{
