@@ -84,7 +84,7 @@ header nav .menu .ul {
 }
 
 header nav .menu .ul ul .il {
-  margin: 3rem;
+  margin: 2rem;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -152,6 +152,7 @@ header .title {
 @media only screen and (min-width: 768px) {
   header .title {
     font-size: 24px;
+    max-width: 70%;
   }
 }
 
