@@ -2,25 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
+.container1 {
+  width: 90%;
   margin: auto;
   text-align: center;
 }
 
-.container article:first-child h2 {
+.container1 article:first-child h2 {
   color: #658DA7;
   font-weight: 600;
-  margin-top: 3%;
+  margin: 3% auto 1%;
 }
 
-.container article:first-child .service-line {
+.container1 article:first-child .service-line {
   background-color: #c1d5db;
   margin: 20px auto;
   width: 10%;
@@ -28,120 +30,44 @@ a {
   border: none;
 }
 
-.container article:first-child .service-sous-titre {
+.container1 article:first-child .service-sous-titre {
   color: #6f6E6E;
-  padding: 1em;
+  padding: 2em;
   font-weight: 400;
   font-variant: small-caps;
   font-size: 2em;
 }
 
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container article:first-child .service-sous-titre {
-    max-width: 70%;
-    margin: auto;
-  }
-}
-
-.container .service-flex-cards {
+.container1 .service-flex-cards {
   background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-flex-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .container .service-flex-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container .service-flex-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
-.container .service-flex-cards .service-cards {
+.container1 .service-flex-cards .service-cards {
   background-color: #ffffff;
   border: transparent;
   border-radius: 10px;
   margin: 3% auto;
+  display: inline-block;
+  width: 28%;
+  height: 200px;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-flex-cards .service-cards {
-    display: -ms-grid;
-    display: grid;
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .container .service-flex-cards .service-cards {
-    display: inline-block;
-    width: 28%;
-    height: 200px;
-  }
-}
-
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container .service-flex-cards .service-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    grid-columns: 1/3;
-    width: 90%;
-    margin: 5% auto;
-  }
-}
-
-.container .service-flex-cards .service-cards .service-image {
+.container1 .service-flex-cards .service-cards .service-image {
   float: left;
-  width: 250px;
+  width: 50%;
   height: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-flex-cards .service-cards .service-image {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-}
-
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container .service-flex-cards .service-cards .service-image {
-    width: 100%;
-  }
-}
-
-.container .service-flex-cards .service-cards .service-cards-part2 {
+.container1 .service-flex-cards .service-cards .service-cards-part2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -151,58 +77,37 @@ a {
   grid-gap: 1%;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-flex-cards .service-cards .service-cards-part2 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-}
-
-.container .service-flex-cards .service-cards .service-titel {
+.container1 .service-flex-cards .service-cards .service-cards-part2 .service-titel {
   color: #658DA7;
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
   width: 100%;
-  margin: auto;
+  margin: 15% auto;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container .service-flex-cards .service-cards .service-titel {
-    grid-rows: 2/3;
-  }
+.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  float: left;
+  padding: 10% 0 0 40%;
 }
 
-.container .service-flex-cards .service-cards .service-info {
-  display: block;
-  float: right;
-  padding: 10% 0;
-}
-
-@media only screen and (min-width: 968px) and (max-width: 1199px) {
-  .container .service-flex-cards .service-cards .service-info {
-    grid-rows: 2/3;
-  }
-}
-
-.container .service-flex-cards .service-cards .service-info a {
+.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info a {
   color: #6f6E6E;
 }
 
-.container .service-flex-cards .service-cards .service-info a:hover {
+.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info a:hover .service-info {
   color: #e7e7e7;
 }
 
-.container .service-flex-cards .service-description {
+.container1 .service-flex-cards .service-cards .service-description {
   text-align: justify;
   color: #ffffff;
   width: 28%;
@@ -211,132 +116,263 @@ a {
   background-color: coral;
 }
 
-.container .service-presentation {
+.container1 .service-presentation {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin: 2.5%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-top: 2.5%;
+  width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    margin: auto;
-  }
-}
-
-.container .service-presentation .service-pre-part1 {
+.container1 .service-presentation .service-pre-part1 {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-}
-
-.container .service-presentation .service-pre-part1 h3 {
-  font-size: 3em;
+.container1 .service-presentation .service-pre-part1 h3 {
+  font-size: 2.5em;
   text-align: left;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part1 h3 {
-    text-align: center;
-    margin-top: 5%;
-  }
-}
-
-.container .service-presentation .service-pre-part1 .text1 {
-  margin: 5% auto;
-  font-size: 24px;
+.container1 .service-presentation .service-pre-part1 .text1 {
+  margin: 3% auto 0;
+  font-size: 1.5em;
   text-align: left;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part1 .text1 {
-    width: 70%;
-    text-align: center;
-  }
-}
-
-.container .service-presentation .service-pre-part1 .service-pre-btn {
-  margin-top: 5%;
+.container1 .service-presentation .service-pre-part1 .service-pre-btn {
+  margin: 5% 0 0;
   background-color: #658da7;
   border-radius: 30px;
   border: none;
   width: 40%;
   height: 2em;
   font-size: 2em;
+  float: left;
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part1 .service-pre-btn {
-    margin: 2%;
-    width: 60%;
-    font-size: 1.5em;
-    color: #ffffff;
+.container1 .service-presentation .service-pre-part1 .service-pre-btn a {
+  color: #c1d5db;
+}
+
+.container1 .service-presentation .service-pre-part1 .service-pre-btn a:hover {
+  color: #658DA7;
+}
+
+.container1 .service-presentation .service-pre-part1 .service-pre-btn:hover {
+  background-color: #c1d5db;
+}
+
+.container1 .service-presentation .service-pre-part2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-image: url(../../img/service-7.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-X;
+  -webkit-animation: image 6s linear infinite;
+          animation: image 6s linear infinite;
+}
+
+@-webkit-keyframes image {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
   }
 }
 
-.container .service-presentation .service-pre-part1 .service-pre-btn:hover {
-  width: 60%;
-  background-color: #658da7;
-  color: white;
+@keyframes image {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part1 .service-pre-btn:hover {
+@media (max-width: 767px) {
+  .container1 article:first-child h2 {
+    margin-top: 10%;
+  }
+  .container1 article:first-child .service-sous-titre {
+    padding: 0.5em;
+  }
+  .container1 .service-flex-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .container1 .service-flex-cards .service-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    width: 70%;
+  }
+  .container1 .service-flex-cards .service-cards .service-image {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100px;
+  }
+  .container1 .service-flex-cards .service-cards .service-cards-part2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .container1 .service-flex-cards .service-cards .service-cards-part2 .service-titel {
+    margin: 5% 0 3%;
+    font-size: 1em;
+  }
+  .container1 .service-flex-cards .service-cards .service-cards-part2 .service-info {
+    padding: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container1 .service-presentation {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin: auto;
+  }
+  .container1 .service-presentation .service-pre-part1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .container1 .service-presentation .service-pre-part1 h3 {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .container1 .service-presentation .service-pre-part1 .text1 {
+    width: 70%;
+    text-align: center;
+    font-size: 1em;
+  }
+  .container1 .service-presentation .service-pre-part1 .service-pre-btn {
+    margin: 5%;
+    width: 80%;
+    font-size: .7em;
+    color: #ffffff;
+    float: none;
+  }
+  .container1 .service-presentation .service-pre-part1 .service-pre-btn:hover {
     color: #000000;
   }
-}
-
-.container .service-presentation .service-pre-part2 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-}
-
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part2 {
+  .container1 .service-presentation .service-pre-part2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
 }
 
-.container .service-presentation .service-pre-part2 img {
-  width: 80%;
-  height: 400px;
-  float: right;
-}
-
-@media only screen and (max-width: 767px) {
-  .container .service-presentation .service-pre-part2 img {
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container1 article:first-child .service-sous-titre {
+    max-width: 90%;
+    margin: auto;
+  }
+  .container1 .service-flex-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .container1 .service-flex-cards .service-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    width: 80%;
     margin: 5% auto;
+  }
+  .container1 .service-flex-cards .service-cards .service-image {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 100%;
+    height: 200px;
+  }
+  .container1 .service-presentation {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    margin: auto;
+  }
+  .container1 .service-presentation .service-pre-part1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .container1 .service-presentation .service-pre-part1 h3 {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .container1 .service-presentation .service-pre-part1 .text1 {
+    text-align: center;
+  }
+  .container1 .service-presentation .service-pre-part1 .service-pre-btn {
     float: none;
+    margin-bottom: 5%;
+  }
+  .container1 .service-presentation .service-pre-part2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
 }
 
-.hidden, .container .service-flex-cards .service-description {
+.hidden, .container1 .service-flex-cards .service-cards .service-description {
   display: none;
 }
 
 .visible {
   display: block;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
