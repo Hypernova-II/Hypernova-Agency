@@ -161,8 +161,9 @@ body {
 .pricing .s1 .prix,
 .pricing .s2 .prix,
 .pricing .s3 .prix {
-  font-size: 24px;
+  font-size: 28px;
   padding: 1rem 0rem;
+  font-weight: bold;
   text-align: center;
   background-color: #f0f0f0;
   width: 100%;
@@ -207,6 +208,12 @@ body {
 .pricing .s3 .detail:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.pricing .s1 .detail:hover a,
+.pricing .s2 .detail:hover a,
+.pricing .s3 .detail:hover a {
+  color: white;
 }
 
 .pricing .s1 .detail a,
