@@ -1,0 +1,135 @@
+     //Start media mobile et tablet//
+     @mixin mobile {
+         @media (max-width: 767px) {
+             .container1 {
+                 article:first-child {
+                     h2 {
+                         margin-top: 10%;
+                     }
+                     .service-sous-titre {
+                         padding: 0.5em;
+                     }
+                 }
+                 .service-flex-cards {
+                     display: grid;
+                     grid-template-columns: 1fr;
+                     .service-cards {
+                         display: grid;
+                         grid-template-columns: 1fr;
+                         grid-template-rows: 1fr 1fr;
+                         width: 70%;
+                         .service-image {
+                             display: grid;
+                             grid-column: 1/2;
+                             grid-row: 1/2;
+                             width: 100%;
+                             height: 100px;
+                         }
+                         .service-cards-part2 {
+                             grid-column: 1/2;
+                             grid-row: 2/3;
+                             .service-titel {
+                                 margin: 5% 0 3%;
+                                 font-size: 1em;
+                             }
+                             .service-info {
+                                 padding: 0;
+                                 grid-column: 1/2;
+                             }
+                         }
+                     }
+                 }
+                 .service-presentation {
+                     grid-template-columns: 1fr;
+                     grid-template-rows: 1fr 1fr;
+                     margin: auto;
+                     .service-pre-part1 {
+                         grid-row: 1/2;
+                         h3 {
+                             text-align: center;
+                             margin-top: 5%;
+                         }
+                         .text1 {
+                             width: 70%;
+                             text-align: center;
+                             font-size: 1em;
+                         }
+                         .service-pre-btn {
+                             margin: 5%;
+                             width: 80%;
+                             font-size: .7em;
+                             color: #ffffff;
+                             float: none;
+                         }
+                         .service-pre-btn:hover {
+                             color: #000000;
+                         }
+                     }
+                     .service-pre-part2 {
+                         grid-column: 1/2;
+                         grid-row: 2/3;
+                     }
+                 }
+             }
+         }
+     }
+     
+     //End media query mobile et tablet//
+     //Start media query medium //
+     @mixin medium {
+         @media (min-width: 768px) and (max-width: 1440px) {
+             .container1 {
+                 article:first-child {
+                     .service-sous-titre {
+                         max-width: 90%;
+                         margin: auto;
+                     }
+                 }
+                 .service-flex-cards {
+                     display: grid;
+                     grid-template-columns: 1fr 1fr;
+                     grid-template-rows: 1fr;
+                     .service-cards {
+                         display: grid;
+                         grid-template-columns: 1fr 1fr;
+                         grid-template-rows: 1fr;
+                         width: 80%;
+                         margin: 5% auto;
+                         .service-image {
+                             display: grid;
+                             grid-column: 1/2;
+                             grid-row: 1/2;
+                             width: 100%;
+                             height: 200px;
+                         }
+                     }
+                 }
+                 .service-presentation {
+                     grid-template-columns: 1fr;
+                     grid-template-rows: 1fr 1fr;
+                     margin: auto;
+                     .service-pre-part1 {
+                         grid-row: 1/2;
+                         grid-column: 1/3;
+                         h3 {
+                             text-align: center;
+                             margin-top: 5%;
+                         }
+                         .text1 {
+                             text-align: center;
+                         }
+                         .service-pre-btn {
+                             float: none;
+                             margin-bottom: 5%;
+                         }
+                     }
+                     .service-pre-part2 {
+                         grid-column: 1/3;
+                         grid-row: 2/3;
+                     }
+                 }
+             }
+         }
+     }
+     
+     //End media query medium //
