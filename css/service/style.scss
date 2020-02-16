@@ -1,8 +1,10 @@
+$maincolr:#658DA7;
+$childcolr:#c1d5db;
+$fontcolor:#6e6E6E;
 @import"./mixin";
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -16,19 +18,19 @@ a {
     text-align: center;
     article:first-child {
         h2 {
-            color: #658DA7;
+            color: $maincolr;
             font-weight: 600;
             margin: 3% auto 1%;
         }
         .service-line {
-            background-color: #c1d5db;
-            margin: 20px auto;
+            background-color: $childcolr;
+            margin: 3% auto 0;
             width: 10%;
             height: 5px;
             border: none;
         }
         .service-sous-titre {
-            color: #6f6E6E;
+            color: $fontcolor;
             padding: 2em;
             font-weight: 400;
             font-variant: small-caps;
@@ -52,42 +54,66 @@ a {
                 float: left;
                 width: 50%;
                 height: 100%;
+                transition: width 2S ease;
             }
-            .service-cards-part2 {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                grid-gap: 1%;
-                .service-titel {
-                    color: #658DA7;
-                    font-weight: 700;
-                    font-size: 20px;
-                    text-transform: capitalize;
+            .service-image:hover {
+                transform: scale(-1, 1);
+            }
+            .flip-card {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: width 1s ease-in-out;
+                .flip-card>div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     width: 100%;
-                    margin: 15% auto;
-                    grid-row: 1/2;
+                    height: 100%;
                 }
-                .service-info {
+                .service-cards-part2 {
                     display: grid;
-                    grid-row: 2/3;
-                    float: left;
-                    padding: 10% 0 0 40%;
-                    a {
-                        color: #6f6E6E;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-gap: 1%;
+                    z-index: 1;
+                    backface-visibility: hidden;
+                    .service-titel {
+                        color: $maincolr;
+                        font-weight: 700;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        width: 100%;
+                        margin: 15% auto;
+                        grid-row: 1/2;
                     }
-                    a:hover .service-info {
-                        color: #e7e7e7;
+                    .service-info {
+                        display: grid;
+                        grid-row: 2/3;
+                        float: left;
+                        padding: 10% 0 0 40%;
+                        a {
+                            color: $fontcolor;
+                        }
+                        a:hover {
+                            color: $maincolr;
+                        }
                     }
+                }
+                .service-description {
+                    display: block;
+                    text-align: center;
+                    color: #ffffff;
+                    border: 10px black solid;
+                    background-color: coral;
+                    z-index: 1;
+                    backface-visibility: hidden;
+                    transform: rotateX(180deg) translateY(200px);
                 }
             }
-            .service-description {
-                text-align: justify;
-                color: #ffffff;
-                width: 28%;
-                height: 200px;
-                border: 10px black solid;
-                background-color: coral;
-                @extend .hidden;
+            .flip-card:hover {
+                transform: rotateX(180deg);
             }
         }
     }
@@ -112,7 +138,7 @@ a {
             }
             .service-pre-btn {
                 margin: 5% 0 0;
-                background-color: #658da7;
+                background-color: $maincolr;
                 border-radius: 30px;
                 border: none;
                 width: 40%;
@@ -120,14 +146,14 @@ a {
                 font-size: 2em;
                 float: left;
                 a {
-                    color: #c1d5db;
+                    color: $childcolr;
                 }
                 a:hover {
-                    color: #658DA7;
+                    color: $maincolr;
                 }
             }
             .service-pre-btn:hover {
-                background-color: #c1d5db;
+                background-color: $childcolr;
             }
         }
         .service-pre-part2 {
@@ -153,11 +179,11 @@ a {
 @include mobile();
 @include medium();
 // start framework
-.hidden {
+%hidden {
     display: none;
 }
 
-.visible {
+%visible {
     display: block;
 }
 

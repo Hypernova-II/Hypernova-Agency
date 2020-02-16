@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'poppins', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -24,14 +24,14 @@ a {
 
 .container1 article:first-child .service-line {
   background-color: #c1d5db;
-  margin: 20px auto;
+  margin: 3% auto 0;
   width: 10%;
   height: 5px;
   border: none;
 }
 
 .container1 article:first-child .service-sous-titre {
-  color: #6f6E6E;
+  color: #6e6E6E;
   padding: 2em;
   font-weight: 400;
   font-variant: small-caps;
@@ -65,9 +65,34 @@ a {
   float: left;
   width: 50%;
   height: 100%;
+  -webkit-transition: width 2S ease;
+  transition: width 2S ease;
 }
 
-.container1 .service-flex-cards .service-cards .service-cards-part2 {
+.container1 .service-flex-cards .service-cards .service-image:hover {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.container1 .service-flex-cards .service-cards .flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+.container1 .service-flex-cards .service-cards .flip-card .flip-card > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -75,9 +100,12 @@ a {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 1%;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.container1 .service-flex-cards .service-cards .service-cards-part2 .service-titel {
+.container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 .service-titel {
   color: #658DA7;
   font-weight: 700;
   font-size: 20px;
@@ -89,7 +117,7 @@ a {
   grid-row: 1/2;
 }
 
-.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info {
+.container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 .service-info {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 2;
@@ -99,21 +127,30 @@ a {
   padding: 10% 0 0 40%;
 }
 
-.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info a {
-  color: #6f6E6E;
+.container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 .service-info a {
+  color: #6e6E6E;
 }
 
-.container1 .service-flex-cards .service-cards .service-cards-part2 .service-info a:hover .service-info {
-  color: #e7e7e7;
+.container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 .service-info a:hover {
+  color: #658DA7;
 }
 
-.container1 .service-flex-cards .service-cards .service-description {
-  text-align: justify;
+.container1 .service-flex-cards .service-cards .flip-card .service-description {
+  display: block;
+  text-align: center;
   color: #ffffff;
-  width: 28%;
-  height: 200px;
   border: 10px black solid;
   background-color: coral;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(180deg) translateY(200px);
+          transform: rotateX(180deg) translateY(200px);
+}
+
+.container1 .service-flex-cards .service-cards .flip-card:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .container1 .service-presentation {
@@ -150,7 +187,7 @@ a {
 
 .container1 .service-presentation .service-pre-part1 .service-pre-btn {
   margin: 5% 0 0;
-  background-color: #658da7;
+  background-color: #658DA7;
   border-radius: 30px;
   border: none;
   width: 40%;
@@ -238,6 +275,10 @@ a {
     width: 100%;
     height: 100px;
   }
+  .container1 .service-flex-cards .service-cards .flip-card .service-description {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
   .container1 .service-flex-cards .service-cards .service-cards-part2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -255,6 +296,9 @@ a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+  }
+  .container1 .service-flex-cards .service-cards .service-cards-part2 .service-info a {
+    display: none;
   }
   .container1 .service-presentation {
     -ms-grid-columns: 1fr;
@@ -332,6 +376,10 @@ a {
     width: 100%;
     height: 200px;
   }
+  .container1 .service-flex-cards .service-cards .flip-card .service-description {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
   .container1 .service-presentation {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -366,13 +414,5 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-}
-
-.hidden, .container1 .service-flex-cards .service-cards .service-description {
-  display: none;
-}
-
-.visible {
-  display: block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,6 +25,11 @@
                              width: 100%;
                              height: 100px;
                          }
+                         .flip-card {
+                             .service-description {
+                                 transform: rotateX(180deg);
+                             }
+                         }
                          .service-cards-part2 {
                              grid-column: 1/2;
                              grid-row: 2/3;
@@ -35,6 +40,9 @@
                              .service-info {
                                  padding: 0;
                                  grid-column: 1/2;
+                                 a {
+                                     display: none;
+                                 }
                              }
                          }
                      }
@@ -101,6 +109,11 @@
                              grid-row: 1/2;
                              width: 100%;
                              height: 200px;
+                         }
+                         .flip-card {
+                             .service-description {
+                                 transform: rotateX(180deg);
+                             }
                          }
                      }
                  }
