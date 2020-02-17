@@ -1,0 +1,230 @@
+header {
+  font-family: 'Poppins', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  background-image: url(../../img/testbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider 15s infinite;
+          animation: slider 15s infinite;
+}
+
+@-webkit-keyframes slider {
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
+  }
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
+  }
+  75% {
+    background-image: url(../../img/testbg3.jpg);
+  }
+  100% {
+    background-image: url(../../img/testbg.jpg);
+  }
+}
+
+@keyframes slider {
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
+  }
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
+  }
+  75% {
+    background-image: url(../../img/testbg3.jpg);
+  }
+  100% {
+    background-image: url(../../img/testbg.jpg);
+  }
+}
+
+header nav {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav .logo img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+header nav .menu {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .menu .ul {
+  display: none;
+  color: white;
+  font-weight: bold;
+}
+
+header nav .menu .ul ul .il {
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav .menu .ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header nav .menu .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+  justify-self: end;
+}
+
+header nav .menu .search input {
+  border: none;
+  border-radius: 30px;
+  width: 30vw;
+  font-size: 14px;
+  padding: 0.3rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav .menu .search input {
+    width: 10vw;
+  }
+}
+
+header nav .humberger {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+header nav .humberger .line {
+  cursor: pointer;
+  width: 70%;
+  height: 15%;
+  background-color: white;
+  border: none;
+  border-radius: 20%;
+  margin: 3px;
+}
+
+@media only screen and (min-width: 1440px) {
+  header nav .humberger {
+    display: none;
+  }
+}
+
+header .title {
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header .title {
+    font-size: 24px;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header .title {
+    font-size: 28px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+header .paragraphe {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header .paragraphe {
+    font-size: 24px;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header .paragraphe {
+    font-size: 24px;
+    max-width: 50%;
+  }
+}
+
+header .button {
+  margin-bottom: 2rem;
+}
+
+header .button button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #658da7;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  width: 30vw;
+  height: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .button button {
+    font-size: 24px;
+    width: 20vw;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header .button button {
+    font-size: 24px;
+    width: 20vw;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=hejjami.css.map */

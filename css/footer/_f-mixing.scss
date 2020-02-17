@@ -1,0 +1,18 @@
+@mixin footerline ($mrg, $clr) {
+    height: 0.75px;
+    background-color: $clr ;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: $mrg;
+}
+
+@mixin forminputs {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}

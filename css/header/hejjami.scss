@@ -1,0 +1,173 @@
+@mixin TAB {
+    @media only screen and (min-width:768px){
+        @content;
+        
+    }
+}
+@mixin  desktop {
+    @media only screen and (min-width:1440px){
+        @content;
+        
+    }
+
+    
+}
+header{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    justify-self: center;
+    background-image: url(../../img/testbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 15s infinite;
+    @keyframes slider {
+        25%{
+            background-image: url(../../img/teastbg2.jpg);
+        }
+        50%{
+            background-image: url(../../img/bg-header4.jpg);
+        }
+        75%{
+            background-image: url(../../img/testbg3.jpg);
+        }
+        100%{
+            background-image: url(../../img/testbg.jpg);
+        }
+        
+    }
+    
+    nav{
+        width: 90%;
+        display: grid;
+        padding: 1rem;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include desktop(){
+            grid-template-columns: 1fr 3fr;
+        }
+        .logo{
+            img{
+                @include desktop(){
+                    height: 100px;
+                    width: 100px;
+                } 
+            }
+        }
+        .menu{
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            .ul{
+                display: none;
+                color: white;
+                font-weight: bold;
+                ul{
+                    .il{
+                        margin: 2rem;
+                    }
+            }
+                @include desktop(){
+                    display: flex;
+                }
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                margin-left: 2rem;
+                justify-self: end;
+                input{
+                border: none;
+                border-radius: 30px;
+                width: 30vw;
+                font-size: 14px;
+                padding: 0.3rem;
+                @include desktop(){
+                    width: 10vw;
+                }
+                }
+            }
+        }
+        .humberger{
+            margin-top: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20%;
+            cursor: pointer;
+            .line{
+                cursor: pointer;
+                width: 70%;
+                height: 15%;
+                background-color: white;
+                border: none;
+                border-radius: 20%;
+                margin: 3px;
+            }
+            @include desktop(){
+                display: none;
+            }
+        }
+    }
+    .title{
+        text-align: center;
+        color: white;
+        @include TAB(){
+            font-size: 24px;
+            max-width: 70%;
+        }
+        @include desktop(){
+            font-size: 28px;
+            align-self: flex-end;
+        }
+       
+    }
+    .paragraphe{
+        text-align: center;
+        color: white;
+        padding: 1rem;
+        @include TAB(){
+            font-size: 24px;
+
+            max-width: 50%;
+        }
+        @include desktop(){
+            font-size: 24px;
+
+            max-width: 50%;
+        }
+    }
+    .button{
+        margin-bottom:2rem;
+        button{
+            font-family: 'Poppins', sans-serif;
+            background-color: #658da7;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            width: 30vw;
+            height: 35px;
+            @include TAB(){
+                font-size: 24px;
+                width: 20vw;
+                height: 45px;
+                
+            }
+            @include desktop(){
+                font-size: 24px;
+                width: 20vw;
+                height: 45px;
+                
+            }
+        }
+        
+    }
+    @include TAB(){
+        width: 100%;
+    }
+    @include desktop(){
+        width: 100%;
+        height: 100vh;
+    }
+    
+}

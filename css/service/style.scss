@@ -1,0 +1,164 @@
+@import"./mixin";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    article:first-child {
+        h2 {
+            color: #658DA7;
+            font-weight: 600;
+            margin: 3% auto 1%;
+        }
+        .service-line {
+            background-color: #c1d5db;
+            margin: 20px auto;
+            width: 10%;
+            height: 5px;
+            border: none;
+        }
+        .service-sous-titre {
+            color: #6f6E6E;
+            padding: 2em;
+            font-weight: 400;
+            font-variant: small-caps;
+            font-size: 2em;
+        }
+    }
+    .service-flex-cards {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .service-cards {
+            background-color: #ffffff;
+            border: transparent;
+            border-radius: 10px;
+            margin: 3% auto;
+            display: inline-block;
+            width: 28%;
+            height: 200px;
+            .service-image {
+                float: left;
+                width: 50%;
+                height: 100%;
+            }
+            .service-cards-part2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 1%;
+                .service-titel {
+                    color: #658DA7;
+                    font-weight: 700;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    width: 100%;
+                    margin: 15% auto;
+                    grid-row: 1/2;
+                }
+                .service-info {
+                    display: grid;
+                    grid-row: 2/3;
+                    float: left;
+                    padding: 10% 0 0 40%;
+                    a {
+                        color: #6f6E6E;
+                    }
+                    a:hover .service-info {
+                        color: #e7e7e7;
+                    }
+                }
+            }
+            .service-description {
+                text-align: justify;
+                color: #ffffff;
+                width: 28%;
+                height: 200px;
+                border: 10px black solid;
+                background-color: coral;
+                @extend .hidden;
+            }
+        }
+    }
+    .service-presentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 2.5%;
+        width: 100%;
+        .service-pre-part1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 100%;
+            h3 {
+                font-size: 2.5em;
+                text-align: left;
+            }
+            .text1 {
+                margin: 3% auto 0;
+                font-size: 1.5em;
+                text-align: left;
+            }
+            .service-pre-btn {
+                margin: 5% 0 0;
+                background-color: #658da7;
+                border-radius: 30px;
+                border: none;
+                width: 40%;
+                height: 2em;
+                font-size: 2em;
+                float: left;
+                a {
+                    color: #c1d5db;
+                }
+                a:hover {
+                    color: #658DA7;
+                }
+            }
+            .service-pre-btn:hover {
+                background-color: #c1d5db;
+            }
+        }
+        .service-pre-part2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-image: url(../../img/service-7.jpg);
+            background-size: cover;
+            background-position: 0 0;
+            background-repeat: repeat-X;
+            animation: image 6s linear infinite;
+            @keyframes image {
+                from {
+                    background-position: 0 0;
+                }
+                to {
+                    background-position: 0 100%;
+                }
+            }
+        }
+    }
+}
+
+@include mobile();
+@include medium();
+// start framework
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+// end framework
