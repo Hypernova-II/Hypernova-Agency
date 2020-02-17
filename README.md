@@ -14,7 +14,7 @@ https://hypernova-ii.github.io/Hypernova-Agency/
 
 ## Versioning
 
-We use GiHub for versioning. see the [tags on this repository](https://github.com/Hypernova-II/Hypernova-Agency/tags). 
+We use GitHub for versioning. see the [tags on this repository](https://github.com/Hypernova-II/Hypernova-Agency/tags). 
 
 ## contributors
 
