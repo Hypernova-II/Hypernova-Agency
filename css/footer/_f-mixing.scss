@@ -1,6 +1,6 @@
-@mixin footerline ($mrg) {
+@mixin footerline ($mrg, $clr) {
     height: 0.75px;
-    background-color: #CDCDCD ;
+    background-color: $clr ;
     width: 80%;
     margin: auto;
     border-radius: 50%;
