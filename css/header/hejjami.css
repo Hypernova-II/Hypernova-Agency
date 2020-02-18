@@ -2,7 +2,8 @@ header {
   font-family: 'Poppins', sans-serif;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   background-image: url(../../img/testbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
