@@ -63,6 +63,7 @@
       border-radius: 50%;
       height:20vh;
       margin: 3rem 0rem 0rem;
+    
   }
   .box3 img {
       border-radius: 50%;
@@ -92,53 +93,57 @@
       
   }
   .nos-clients{
-      background-color: lightgray;
-      margin-top: 4rem;
-      padding: 4rem 0rem 4rem 0rem;
+             background-color: lightgray;
+             margin-top: 4rem;
+             padding: 4rem 0rem 4rem 0rem;
   }
   .clients{
-      margin-top: 3rem;
+      
+             margin-top: 3rem;
   }
   @media only screen and (min-width: 768px){
         .article{
             
                     display: grid;
-                   grid-template-columns: 1fr 1fr;
-                   grid-template-rows: 1fr 1fr 1fr;
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-
-        }
-        .img4{
-            grid-column: 1/3;
-            grid-row: 2/3;
-        }
-        .img5{
-            grid-column: 2/4;
-            grid-row: 2/3;
-        }        
-
-    }
-    @media only screen and (min-width: 1440px) {
-        .article{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            width: 90%;
-            margin: auto;
+                         grid-template-columns: 1fr 1fr;
+                         grid-template-rows: 1fr 1fr 1fr;
+                   
         }
         .clients{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-           grid-template-rows: 1fr;
+                 grid-template-columns: 1fr 1fr 1fr;
+                 grid-template-rows: 1fr;
         }
         .img4{
-            grid-column: 4/5;
-            grid-row: 1/2;
+                 grid-column: 1/3;
+                 grid-row: 2/3;
         }
         .img5{
-            grid-column: 5/6;
-            grid-row: 1/2;
+                  grid-column: 2/4;
+                  grid-row: 2/3;
+        }         
+
+    }
+    @media only screen and (min-width: 1200px) {
+        .article{
+                    display: grid;
+                           grid-template-columns: 1fr 1fr 1fr;
+                           grid-template-rows: 1fr 1fr;
+                           width: 90%;
+                           margin: auto;
+        }
+        .clients{
+                      display: grid;
+                           grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                           grid-template-rows: 1fr;
+        }
+         .img4{
+                      grid-column: 4/5;
+                      grid-row: 1/2;
+        }
+        .img5{
+                      grid-column: 5/6;
+                      grid-row: 1/2; */
         } 
         
     }
