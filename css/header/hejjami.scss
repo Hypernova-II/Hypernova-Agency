@@ -21,8 +21,8 @@ a {
 header {
     font-family: 'Poppins', sans-serif;
     display: grid;
-    justify-self: center;
     background-image: url(../../img/testbg.jpg);
+    justify-self: center;
     background-repeat: no-repeat;
     background-size: cover;
     animation: slider 60s infinite;
@@ -194,6 +194,7 @@ header {
     }
     .title {
         text-align: center;
+        justify-self: center;
         color: white;
         justify-self: center;
         @include TAB() {
@@ -207,6 +208,7 @@ header {
     }
     .paragraphe {
         text-align: center;
+        justify-self: center;
         color: white;
         padding: 1rem;
 justify-self: center;

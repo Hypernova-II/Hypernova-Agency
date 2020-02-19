@@ -167,6 +167,8 @@ header nav .humberger .line {
 
 header .title {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
 }
 
@@ -187,6 +189,8 @@ header .title {
 
 header .paragraphe {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
   padding: 1rem;
 }
