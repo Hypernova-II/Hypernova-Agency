@@ -8,15 +8,14 @@
         margin: 2.5rem 0rem;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         transition-duration: 0.3s;
+        background-color: white;
+        
         &:hover{
-            transform: scale(1.1);
+            transform:scale(1.1) ;
             .prix{
-                background-color: #658da7;
+                background-color: #658DA7;
             }
-            .detail{
-                background-color: #658da7;
-                
-            }
+            
         }
         .heading{
             font-size: 24px;
@@ -32,41 +31,56 @@
             width: 100%;
             transition-duration: 0.6s;
          }
-        .ul{
-           line-height: 36px;
-           hr{
-               width: 120%;
-               margin-left: -3rem;
-            }
-            li{
-                list-style-type: none;
-            }
-        }
-        .detail{
-                width: 90px; 
-                background-color: #f0f0f0;  
-                height: 42px;
-                border-radius: 13px;
-                margin-bottom: 1.5rem;
-                padding: 1rem 0rem 0rem 2rem;
-                transition-duration: 0.5s;
-                &:hover{
-                    transform: scale(1.1);
-                    a{
-                        color: white;
-                        
-                    }
+         .ul{
+            line-height: 36px;
+            padding: 1rem 0rem;
+             li{
+
+                 list-style-type: none;
+                 border-bottom: 1px solid black;
+             }
+         }
+         .btn{
+         
+            width: 90px; 
+            background-color: #f0f0f0;  
+            height: 42px;
+            border-radius: 13px;
+            margin: auto;
+            padding: 1rem 0rem 0.2rem 2rem;
+            transition-duration: 0.5s;
+            margin-bottom: 1rem;
+            &:hover{
+                transform: scale(1.1);
+                background-color: #658da7;
+
+                a{
+                    color: white;
                 }
-
-
-            a{
-                text-decoration: none;
-                color: black;
-                font-size: 20px;
             }
+
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
         }
+    }
 
     
+}
+@mixin details {
+    z-index: -1;
+    justify-self: center;
+    border:none;
+    border-radius: 20px;
+    margin: 2.5rem 0rem;
+    transition-duration: 0.3s;
+    background-color: white;
+    width: 360px;
+    text-align: center;
+   
+     
 }
 
 

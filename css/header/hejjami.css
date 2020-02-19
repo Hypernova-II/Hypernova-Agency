@@ -4,42 +4,63 @@ header {
   display: grid;
   justify-items: center;
   background-image: url(../../img/testbg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-animation: slider 15s infinite;
-          animation: slider 15s infinite;
+ background-repeat: no-repeat;
+ background-size: cover;
+  -webkit-animation: slider 70s infinite;
+          animation: slider 70s infinite;
 }
 
 @-webkit-keyframes slider {
-  25% {
-    background-image: url(../../img/teastbg2.jpg);
+  15% {
+    background-image: url(../../img/testbg2.ppg);
   }
-  50% {
-    background-image: url(../../img/bg-header4.jpg);
+  30% {
+    background-image: url(../../img/testbg3.png);
+  }
+  45% {
+    background-image: url(../../img/testbg4.png);
+  }
+  60% {
+    background-image: url(../../img/testbg5.png);
   }
   75% {
-    background-image: url(../../img/testbg3.jpg);
+    background-image: url(../../img/testbg6.png);               
   }
+ 90% {
+    background-image: url(../../img/testbg7.png);
+  }   
   100% {
     background-image: url(../../img/testbg.jpg);
   }
 }
 
 @keyframes slider {
-  25% {
-    background-image: url(../../img/teastbg2.jpg);
+  15% {
+    background-image: url(../../img/testbg2.png);
   }
-  50% {
-    background-image: url(../../img/bg-header4.jpg);
+  30% {
+    background-image: url(../../img/testbg3.png);
+  }
+  45% {
+    background-image: url(../../img/testbg4.png);
+  }
+  60% {
+    background-image: url(../../img/testbg5.png);
   }
   75% {
-    background-image: url(../../img/testbg3.jpg);
+    background-image: url(../../img/testbg6.png);               
   }
+ 90% {
+    background-image: url(../../img/testbg7.png);
+  }   
   100% {
     background-image: url(../../img/testbg.jpg);
   }
 }
 
+header a {
+  color: white;
+}
 header nav {
   width: 90%;
   display: -ms-grid;
@@ -146,6 +167,8 @@ header nav .humberger .line {
 
 header .title {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
 }
 
@@ -166,9 +189,61 @@ header .title {
 
 header .paragraphe {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
   padding: 1rem;
 }
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+ font-weight: bold;
+  background-color: inherit;
+  font-family: inherit;
+  margin-left: 25px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #658da7;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   header .paragraphe {
