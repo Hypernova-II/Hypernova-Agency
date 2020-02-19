@@ -1,41 +1,39 @@
      //Start media mobile et tablet//
      @mixin mobile {
-         @media (max-width: 767px) {
+         @media (max-width: 900px) {
              .container1 {
+                 width: 100%;
                  article:first-child {
                      h2 {
                          margin-top: 10%;
                      }
                      .service-sous-titre {
-                         padding: 0.5em;
+                         margin: auto;
+                         width: 70%;
                      }
                  }
                  .service-flex-cards {
-                     display: grid;
-                     grid-template-columns: 1fr;
+                     display: block;
                      .service-cards {
-                         display: grid;
-                         grid-template-columns: 1fr;
-                         grid-template-rows: 1fr 1fr;
-                         width: 70%;
+                         display: block;
+                         background-image: url(../../img/service-back-mobile.jpg);
+                         background-size: cover;
+                         width: 80%;
+                         margin: 10% auto;
                          .service-image {
-                             display: grid;
-                             grid-column: 1/2;
-                             grid-row: 1/2;
-                             width: 100%;
-                             height: 100px;
+                             display: none;
                          }
                          .service-cards-part2 {
-                             grid-column: 1/2;
-                             grid-row: 2/3;
                              .service-titel {
-                                 margin: 5% 0 3%;
-                                 font-size: 1em;
+                                 font-size: 3em;
+                                 margin-top: 10%;
                              }
                              .service-info {
-                                 padding: 0;
-                                 grid-column: 1/2;
+                                 width: 40%;
                              }
+                         }
+                         .service-description {
+                             transform: rotateX(180deg);
                          }
                      }
                  }
@@ -56,8 +54,9 @@
                          }
                          .service-pre-btn {
                              margin: 5%;
-                             width: 80%;
-                             font-size: .7em;
+                             width: 40%;
+                             height: 3em;
+                             font-size: 1.4em;
                              color: #ffffff;
                              float: none;
                          }
@@ -77,7 +76,7 @@
      //End media query mobile et tablet//
      //Start media query medium //
      @mixin medium {
-         @media (min-width: 768px) and (max-width: 1440px) {
+         @media (min-width: 767px) and (max-width: 1527px) {
              .container1 {
                  article:first-child {
                      .service-sous-titre {
@@ -101,6 +100,28 @@
                              grid-row: 1/2;
                              width: 100%;
                              height: 200px;
+                         }
+                         .flip-card {
+                             .service-cards-part2 {
+                                 .service-titel {
+                                     font-size: 1em;
+                                     padding: 1.8em .1em 0;
+                                 }
+                                 .service-info {
+                                     width: 50%;
+                                     font-size: .6em;
+                                     border-radius: 7px;
+                                     padding: 2em 1em;
+                                     a {}
+                                 }
+                             }
+                             .service-description {
+                                 transform: rotateX(180deg);
+                             }
+                         }
+                         .flip-card:hover {
+                             transform: rotateX(180deg);
+                             z-index: 9;
                          }
                      }
                  }
