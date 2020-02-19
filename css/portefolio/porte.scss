@@ -6,7 +6,7 @@
 }
 
 @mixin phone {
-    @media only screen and (max-width:375px) {
+    @media only screen and (max-width:560px) {
         @content;
     }
 }
@@ -53,6 +53,7 @@
         @include tab() {
             max-width: 80%;
             margin-left: 10%;
+            font-size: 16px;
         }
 
         @include phone() {
@@ -66,6 +67,7 @@
 
     div {
         .portefolio-liste {
+
             list-style-type: none;
             text-decoration: none;
             margin: 2% auto;
@@ -77,23 +79,24 @@
 
             a {
 
-                padding: 60px;
+                padding: 2rem;
                 margin-top: 3%;
                 text-decoration: none;
                 color: #658da7;
                 font-family: 'Roboto', sans-serif;
-                font-size: 16px;
+                font-size: 24px;
                 font-weight: bold;
 
 
                 @include tab {
-
-                    padding: 15px;
+                    font-size: 20px;
+                    padding: 1rem;
                 }
 
                 @include phone() {
-                    font-size: 10px;
-
+                    font-size: 12px;
+                    padding: 0.1rem;
+                    margin-left: 20px;
                 }
 
 
@@ -135,99 +138,29 @@
 
     .inp {
         text-align: center;
+        justify-self: center;
+        margin-top: 2%;
         width: 28%;
         border-radius: 3px;
-        margin: 2%;
-
         -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
         @include phone() {
+            max-width: 150px;
             width: 100%;
-            margin: 5%;
+            margin-left: 20px;
+
+        }
+
+    }
+
+    .port-9 {
+        @include phone {
+            grid-column: 1/3;
+            justify-self: center;
         }
     }
 
-    // .inp2 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp3 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp4 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp5 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp6 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp7 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp8 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-    // }
-
-    // .inp9 {
-    //     text-align: center;
-    //     width: 200px;
-    //     border-radius: 3px;
-
-    //     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    //     margin: 10px;
-
-    // }
 
     .b {
         width: 100%;
@@ -238,11 +171,4 @@
         opacity: 0.3;
         transition: all 1s ease;
     }
-
-
-
-
-}
-
-
 }
