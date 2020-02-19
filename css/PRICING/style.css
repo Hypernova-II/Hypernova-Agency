@@ -163,14 +163,13 @@ body {
   grid-column: 1/2;
 }
 
-.pricing .s1:r .pricing .s1:active {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  z-index: -10;
+.pricing .s1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.pricing .s1:r .pricing .s1:active .prix {
-  background-color: white;
+.pricing .s1:hover .prix {
+  background-color: #658DA7;
 }
 
 .pricing .s1 .heading {
@@ -190,6 +189,16 @@ body {
           transition-duration: 0.6s;
 }
 
+.pricing .s1 .ul {
+  line-height: 36px;
+  padding: 1rem 0rem;
+}
+
+.pricing .s1 .ul li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+
 .pricing .s1 .btn {
   width: 90px;
   background-color: #f0f0f0;
@@ -199,6 +208,7 @@ body {
   padding: 1rem 0rem 0.2rem 2rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  margin-bottom: 1rem;
 }
 
 .pricing .s1 .btn:hover {
@@ -240,14 +250,13 @@ body {
   grid-column: 1/2;
 }
 
-.pricing .s2:r .pricing .s2:active {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  z-index: -10;
+.pricing .s2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.pricing .s2:r .pricing .s2:active .prix {
-  background-color: white;
+.pricing .s2:hover .prix {
+  background-color: #658DA7;
 }
 
 .pricing .s2 .heading {
@@ -267,6 +276,16 @@ body {
           transition-duration: 0.6s;
 }
 
+.pricing .s2 .ul {
+  line-height: 36px;
+  padding: 1rem 0rem;
+}
+
+.pricing .s2 .ul li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+
 .pricing .s2 .btn {
   width: 90px;
   background-color: #f0f0f0;
@@ -276,6 +295,7 @@ body {
   padding: 1rem 0rem 0.2rem 2rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  margin-bottom: 1rem;
 }
 
 .pricing .s2 .btn:hover {
@@ -317,14 +337,13 @@ body {
   grid-column: 1/2;
 }
 
-.pricing .s3:r .pricing .s3:active {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  z-index: -10;
+.pricing .s3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.pricing .s3:r .pricing .s3:active .prix {
-  background-color: white;
+.pricing .s3:hover .prix {
+  background-color: #658DA7;
 }
 
 .pricing .s3 .heading {
@@ -344,6 +363,16 @@ body {
           transition-duration: 0.6s;
 }
 
+.pricing .s3 .ul {
+  line-height: 36px;
+  padding: 1rem 0rem;
+}
+
+.pricing .s3 .ul li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+
 .pricing .s3 .btn {
   width: 90px;
   background-color: #f0f0f0;
@@ -353,6 +382,7 @@ body {
   padding: 1rem 0rem 0.2rem 2rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  margin-bottom: 1rem;
 }
 
 .pricing .s3 .btn:hover {
@@ -391,14 +421,6 @@ body {
   grid-column: 1/2;
 }
 
-.pricing .detail-s1 .ul {
-  line-height: 36px;
-}
-
-.pricing .detail-s1 .ul li {
-  list-style-type: none;
-}
-
 .pricing .detail-s2 {
   z-index: -1;
   -ms-grid-column-align: center;
@@ -417,14 +439,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-}
-
-.pricing .detail-s2 .ul {
-  line-height: 36px;
-}
-
-.pricing .detail-s2 .ul li {
-  list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -456,14 +470,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-}
-
-.pricing .detail-s3 .ul {
-  line-height: 36px;
-}
-
-.pricing .detail-s3 .ul li {
-  list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) {
