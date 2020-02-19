@@ -183,6 +183,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
+        width: 80%;
+        margin-left: 10%;
     }
     .clients {
         display: grid;
