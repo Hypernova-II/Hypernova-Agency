@@ -10,7 +10,9 @@ body {
   margin-top: 2rem;
 }
 
-.testemoinial .title {
+.testemoinial .title h1 {
+  color: #658da7;
+  border-bottom: 2px solid #658da7;
   text-align: center;
 }
 
@@ -42,7 +44,7 @@ body {
 
 .testemoinial .commentaire {
   margin: 1rem;
-  padding: 1rem;
+  padding: 3rem;
   background-color: lightgray;
   border-radius: 20px;
 }
@@ -113,8 +115,160 @@ body {
   }
 }
 
-.pricing .s1,
-.pricing .s2,
+.pricing .s1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 360px;
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  border-radius: 20px;
+  margin: 2.5rem 0rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pricing .s1:r .pricing .s1:active {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: -10;
+}
+
+.pricing .s1:r .pricing .s1:active .prix {
+  background-color: white;
+}
+
+.pricing .s1 .heading {
+  font-size: 24px;
+  padding: 2rem 0rem;
+  font-weight: bold;
+}
+
+.pricing .s1 .prix {
+  font-size: 28px;
+  padding: 1rem 0rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.pricing .s1 .btn {
+  width: 90px;
+  background-color: #f0f0f0;
+  height: 42px;
+  border-radius: 13px;
+  margin: auto;
+  padding: 1rem 0rem 0.2rem 2rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.pricing .s1 .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #658da7;
+}
+
+.pricing .s1 .btn:hover a {
+  color: white;
+}
+
+.pricing .s1 .btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.pricing .s2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 360px;
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  border-radius: 20px;
+  margin: 2.5rem 0rem;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pricing .s2:r .pricing .s2:active {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: -10;
+}
+
+.pricing .s2:r .pricing .s2:active .prix {
+  background-color: white;
+}
+
+.pricing .s2 .heading {
+  font-size: 24px;
+  padding: 2rem 0rem;
+  font-weight: bold;
+}
+
+.pricing .s2 .prix {
+  font-size: 28px;
+  padding: 1rem 0rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.pricing .s2 .btn {
+  width: 90px;
+  background-color: #f0f0f0;
+  height: 42px;
+  border-radius: 13px;
+  margin: auto;
+  padding: 1rem 0rem 0.2rem 2rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.pricing .s2 .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #658da7;
+}
+
+.pricing .s2 .btn:hover a {
+  color: white;
+}
+
+.pricing .s2 .btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .pricing .s3 {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -129,37 +283,31 @@ body {
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  background-color: white;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
 }
 
-.pricing .s1:hover,
-.pricing .s2:hover,
-.pricing .s3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.pricing .s3:r .pricing .s3:active {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: -10;
 }
 
-.pricing .s1:hover .prix,
-.pricing .s2:hover .prix,
-.pricing .s3:hover .prix {
-  background-color: #658da7;
+.pricing .s3:r .pricing .s3:active .prix {
+  background-color: white;
 }
 
-.pricing .s1:hover .detail,
-.pricing .s2:hover .detail,
-.pricing .s3:hover .detail {
-  background-color: #658da7;
-}
-
-.pricing .s1 .heading,
-.pricing .s2 .heading,
 .pricing .s3 .heading {
   font-size: 24px;
   padding: 2rem 0rem;
   font-weight: bold;
 }
 
-.pricing .s1 .prix,
-.pricing .s2 .prix,
 .pricing .s3 .prix {
   font-size: 28px;
   padding: 1rem 0rem;
@@ -171,57 +319,148 @@ body {
           transition-duration: 0.6s;
 }
 
-.pricing .s1 .ul,
-.pricing .s2 .ul,
-.pricing .s3 .ul {
-  line-height: 36px;
-}
-
-.pricing .s1 .ul hr,
-.pricing .s2 .ul hr,
-.pricing .s3 .ul hr {
-  width: 120%;
-  margin-left: -3rem;
-}
-
-.pricing .s1 .ul li,
-.pricing .s2 .ul li,
-.pricing .s3 .ul li {
-  list-style-type: none;
-}
-
-.pricing .s1 .detail,
-.pricing .s2 .detail,
-.pricing .s3 .detail {
+.pricing .s3 .btn {
   width: 90px;
   background-color: #f0f0f0;
   height: 42px;
   border-radius: 13px;
-  margin-bottom: 1.5rem;
-  padding: 1rem 0rem 0rem 2rem;
+  margin: auto;
+  padding: 1rem 0rem 0.2rem 2rem;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
 
-.pricing .s1 .detail:hover,
-.pricing .s2 .detail:hover,
-.pricing .s3 .detail:hover {
+.pricing .s3 .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  background-color: #658da7;
 }
 
-.pricing .s1 .detail:hover a,
-.pricing .s2 .detail:hover a,
-.pricing .s3 .detail:hover a {
+.pricing .s3 .btn:hover a {
   color: white;
 }
 
-.pricing .s1 .detail a,
-.pricing .s2 .detail a,
-.pricing .s3 .detail a {
+.pricing .s3 .btn a {
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+
+.pricing .detail-s1 {
+  z-index: -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
+  border-radius: 20px;
+  margin: 2.5rem 0rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+  width: 360px;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pricing .detail-s1 .ul {
+  line-height: 36px;
+}
+
+.pricing .detail-s1 .ul li {
+  list-style-type: none;
+}
+
+.pricing .detail-s2 {
+  z-index: -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
+  border-radius: 20px;
+  margin: 2.5rem 0rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+  width: 360px;
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pricing .detail-s2 .ul {
+  line-height: 36px;
+}
+
+.pricing .detail-s2 .ul li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing .detail-s2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+.pricing .detail-s3 {
+  z-index: -1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: none;
+  border-radius: 20px;
+  margin: 2.5rem 0rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: white;
+  width: 360px;
+  text-align: center;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.pricing .detail-s3 .ul {
+  line-height: 36px;
+}
+
+.pricing .detail-s3 .ul li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing .detail-s3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .pricing .detail-s3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
 }
 
 @media only screen and (min-width: 768px) {

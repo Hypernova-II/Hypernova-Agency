@@ -2,8 +2,9 @@ header {
   font-family: 'Poppins', sans-serif;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
   background-image: url(../../img/testbg.jpg);
+  -ms-grid-column-align: center;
+      justify-self: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-animation: slider 15s infinite;
@@ -146,6 +147,8 @@ header nav .humberger .line {
 
 header .title {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
 }
 
@@ -166,6 +169,8 @@ header .title {
 
 header .paragraphe {
   text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   color: white;
   padding: 1rem;
 }
@@ -186,6 +191,8 @@ header .paragraphe {
 
 header .button {
   margin-bottom: 2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 header .button button {
