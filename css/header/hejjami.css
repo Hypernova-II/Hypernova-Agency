@@ -25,8 +25,8 @@ header {
   45% {
     background-image: url(../../img/testbg4.png);
   }
-  60% {
-    background-image: url(../../img/testbg5.png);
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
   }
   75% {
     background-image: url(../../img/testbg6.png);
@@ -40,17 +40,11 @@ header {
 }
 
 @keyframes slider {
-  15% {
-    background-image: url(../../img/testbg2.png);
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
   }
-  30% {
-    background-image: url(../../img/testbg3.png);
-  }
-  45% {
-    background-image: url(../../img/testbg4.png);
-  }
-  60% {
-    background-image: url(../../img/testbg5.png);
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
   }
   75% {
     background-image: url(../../img/testbg6.png);
