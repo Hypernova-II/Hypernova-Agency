@@ -1,3 +1,7 @@
+a {
+  color: white;
+}
+
 header {
   font-family: 'Poppins', sans-serif;
   display: -ms-grid;
@@ -7,19 +11,28 @@ header {
   background-image: url(../../img/testbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: slider 15s infinite;
-          animation: slider 15s infinite;
+  -webkit-animation: slider 60s infinite;
+          animation: slider 60s infinite;
 }
 
 @-webkit-keyframes slider {
-  25% {
-    background-image: url(../../img/teastbg2.jpg);
+  15% {
+    background-image: url(../../img/testbg2.png);
+  }
+  30% {
+    background-image: url(../../img/testbg3.png);
+  }
+  45% {
+    background-image: url(../../img/testbg4.png);
   }
   50% {
     background-image: url(../../img/bg-header4.jpg);
   }
   75% {
-    background-image: url(../../img/testbg3.jpg);
+    background-image: url(../../img/testbg6.png);
+  }
+  90% {
+    background-image: url(../../img/testbg7.png);
   }
   100% {
     background-image: url(../../img/testbg.jpg);
@@ -34,7 +47,10 @@ header {
     background-image: url(../../img/bg-header4.jpg);
   }
   75% {
-    background-image: url(../../img/testbg3.jpg);
+    background-image: url(../../img/testbg6.png);
+  }
+  90% {
+    background-image: url(../../img/testbg7.png);
   }
   100% {
     background-image: url(../../img/testbg.jpg);
@@ -43,21 +59,24 @@ header {
 
 header nav {
   width: 90%;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media only screen and (min-width: 1440px) {
   header nav {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -68,7 +87,7 @@ header nav {
   }
 }
 
-header nav .menu {
+header nav .navbar {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -78,50 +97,114 @@ header nav .menu {
   display: flex;
 }
 
-header nav .menu .ul {
-  display: none;
-  color: white;
-  font-weight: bold;
-}
-
-header nav .menu .ul ul .il {
-  margin: 2rem;
-}
-
 @media only screen and (min-width: 1440px) {
-  header nav .menu .ul {
+  header nav .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-header nav .menu .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 2rem;
-  justify-self: end;
-}
-
-header nav .menu .search input {
-  border: none;
-  border-radius: 30px;
-  width: 30vw;
-  font-size: 14px;
-  padding: 0.3rem;
-}
-
-@media only screen and (min-width: 1440px) {
-  header nav .menu .search input {
-    width: 10vw;
+@media only screen and (min-width: 768px) {
+  header nav .navbar {
+    display: none;
   }
 }
 
-header nav .humberger {
+.navbar {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.navbar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar .navbar a:hover, .navbar .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .search {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.humberger {
   margin-top: 10px;
   width: 40px;
   height: 40px;
@@ -129,7 +212,7 @@ header nav .humberger {
   cursor: pointer;
 }
 
-header nav .humberger .line {
+.humberger .line {
   cursor: pointer;
   width: 70%;
   height: 15%;
@@ -140,56 +223,62 @@ header nav .humberger .line {
 }
 
 @media only screen and (min-width: 1440px) {
-  header nav .humberger {
+  .humberger {
     display: none;
   }
 }
 
-header .title {
+.title {
   text-align: center;
   color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media only screen and (min-width: 768px) {
-  header .title {
+  .title {
     font-size: 24px;
     max-width: 70%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  header .title {
+  .title {
     font-size: 28px;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
 }
 
-header .paragraphe {
+.paragraphe {
   text-align: center;
   color: white;
   padding: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media only screen and (min-width: 768px) {
-  header .paragraphe {
+  .paragraphe {
     font-size: 24px;
     max-width: 50%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  header .paragraphe {
+  .paragraphe {
     font-size: 24px;
     max-width: 50%;
   }
 }
 
-header .button {
+.button {
   margin-bottom: 2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-header .button button {
+.button button {
   font-family: 'Poppins', sans-serif;
   background-color: #658da7;
   border: none;
@@ -201,7 +290,7 @@ header .button button {
 }
 
 @media only screen and (min-width: 768px) {
-  header .button button {
+  .button button {
     font-size: 24px;
     width: 20vw;
     height: 45px;
@@ -209,7 +298,7 @@ header .button button {
 }
 
 @media only screen and (min-width: 1440px) {
-  header .button button {
+  .button button {
     font-size: 24px;
     width: 20vw;
     height: 45px;
@@ -217,15 +306,11 @@ header .button button {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 @media only screen and (min-width: 1440px) {
-  header {
-    width: 100%;
-    height: 100vh;
-  }
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=hejjami.css.map */

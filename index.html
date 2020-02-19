@@ -14,30 +14,46 @@
     <link rel="stylesheet" href="css/service/style.css">
     <link rel="stylesheet" href="css/team/oumaima.css">
     <link rel="stylesheet" href="css/header/hejjami.css">
-    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/hyper.css"> -->
+    <link rel="stylesheet" href="css/portefolio/porte.css">
     <title>Hypernova Agency</title>
 </head>
 
 <body>
     <!-- ====================================Start Header=================================== =====-->
-    <header>
+    <header id="home">
         <nav>
             <div class="logo"><img src="img/Hypernova-LOGO.png" alt="logo" height="60" width="60"></div>
-            <div class="menu">
-                <div class="ul">
-                    <ul>
-                        <il class="il">Home</il>
-                        <il class="il">A propos</il>
-                        <il class="il">Nos Service</il>
-                        <il class="il">Portfolio</il>
-                        <il class="il">Contact</il>
-                    </ul>
-                </div>
-                <div class="search">
+
+                    <div class="navbar">
+                        <a href="#Home">Home</a>
+                        <a href="#Team">A propos</a>
+                        <div class="dropdown">
+                          <button class="dropbtn">Service
+                            
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="#">Stratégie marketing</a>
+                            <a href="#">Développement Web</a>
+                            <a href="#">Développement des applications</a>
+                            <a href="#">Hébergement & SEO</a>
+                            <a href="#">Evénementiel</a>
+                            <a href="#">Publicité & Sponsorisation</a>
+                            <a href="#">Création graphique</a>
+                            <a href="#">Street marketing</a>
+                            <a href="#">E-mailing & Sms marketing</a>
+                          </div>
+                        </div> 
+                        <a href="#Portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                   
+                    </div>
+
+                     <div class="search">
                     <input type="text" placeholder="Search"><img src="img/search.png" alt="searchIcon" width="30" height="30">
-                </div>
-            </div>
+                </div>   
+               
+              
+           
             <div class="humberger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -48,7 +64,8 @@
             <h1>Besoin D'augmenter Votre Chiffre D'affaire?</h1>
         </div>
         <div class="paragraphe">
-            <p>HyperNova est une agence de communication et de marketing digitale engagée à aider votre entreprise à augmentre son chiffre d'affaire, ainsi que votre notoriété locale</p>
+            <p>HyperNova est une agence de communication et de marketing digitale engagée à aider votre entreprise à
+                augmentre son chiffre d'affaire, ainsi que votre notoriété locale</p>
         </div>
         <div class="button"><button>Allons-Y</button></div>
 
@@ -170,53 +187,54 @@
     <!-- ====================================End Service=================================== =====-->
 
     <!-- ====================================Start Portfolio=================================== =====-->
-    <section id="Portfolio">
-        <!-- <p class="par">ILS NOUS FONT CONFIANCE</p>
-  <h1 class="hed">Portfolio</h1>
-  <hr class="ligne">
-        <div>
-            <p class="a">Hypernova réalise des solutions sur mesure pour ses clients.
-            Nous vous présentons ici quelques unes<br> 
-            de nos dernières réalisations.
-            Nous serions ravis que vous en ferez
-            partie...
+    <section class="Portfolio">
+        <p class="portefolio-text">ILS NOUS FONT CONFIANCE</p>
+        <h1 class="portefolio-title">Portfolio</h1>
+        <hr class="portefolio-ligne">
+        <div class="portefolio-text1">
+            <p>Hypernova réalise des solutions sur mesure pour ses clients.
+                Nous vous présentons ici quelques unes
+                de nos dernières réalisations.
+                Nous serions ravis que vous en ferez
+                partie...
             </p>
         </div>
         <div>
-            <ul class="list">
+            <ul class="portefolio-liste">
                 <li class="list1"><a href="tout.html" class="lien">Tout</a></li>
                 <li class="list1"><a href="Site Web.html" class="lien">Site Web</a></li>
                 <li class="list1"><a href="Marketing.html" class="lien">Marketing digital</a></li>
                 <li class="list1"><a href="Design.html" class="lien">Design Graphique</a></li>
-              </ul>
-            
+            </ul>
+
         </div>
 
-        <div class="flex-container">
-       
-            <img src="img/Portfolio-1.jpg" alt="Retro maroc" title="retro maroc" class="b">
-     
-            <img src="img/Portfolio-2.jpg" alt="Retro maroc" title="Elysee Travel" class="b">    
-      
-            <img src="img/Portfolio-3.jpg" alt="Retro maroc" title="palais bahia" class="b">    
-       
-            <img src="img/Portfolio-4.jpg" alt="Retro maroc" title="FedEx" class="b">    
-      
-            <img src="img/Portfolio-5.jpg" alt="Retro maroc" title="Quntum Africa" class="b">     
-    
-            <img src="img/Portfolio-6.jpg" alt="Retro maroc" title="ILCS" class="b">    
-      
-            <img src="img/Portfolio-7.jpg" alt="Retro maroc" title="Doctoriel FSR" class="b">     
- 
-            <img src="img/Portfolio-8.jpg" alt="Retro maroc" title="3ème ART" class="b">    
-            <img src="img/Portfolio-9.jpg" alt="Retro maroc" title="Tramway rabat/salé" class="b">     
-    
-        </div> -->
+        <section class="portefolio-flex">
+            <div class="inp"><img src="img/Portfolio-1.jpg" alt="Retro maroc" title="retro maroc" class="b"></div>
+            <div class="inp"> <img src="img/Portfolio-2.jpg" alt="Retro maroc" title="Elysee Travel" class="b"></div>
+
+            <div class="inp"> <img src="img/Portfolio-3.jpg" alt="Retro maroc" title="palais bahia" class="b"></div>
+
+            <div class="inp"> <img src="img/Portfolio-4.jpg" alt="Retro maroc" title="FedEx" class="b"></div>
+
+            <div class="inp"> <img src="img/Portfolio-5.jpg" alt="Retro maroc" title="Quntum Africa" class="b"></div>
+
+            <div class="inp"> <img src="img/Portfolio-6.jpg" alt="Retro maroc" title="ILCS" class="b"></div>
+
+            <div class="inp"><img src="img/Portfolio-7.jpg" alt="Retro maroc" title="Doctoriel FSR" class="b"></div>
+
+            <div class="inp"><img src="img/Portfolio-8.jpg" alt="Retro maroc" title="3ème ART" class="b"></div>
+            <div class="inp port-9"><img src="img/Portfolio-9.jpg" alt="Retro maroc" title="Tramway rabat/salé"
+                    class="b">
+            </div>
+            </div>
+
+        </section>
     </section>
     <!-- ====================================End Portfolio=================================== =====-->
 
     <!-- ====================================Start Team=================================== =====-->
-    <section id="Team ">
+    <section id="Team">
         <div class="containers ">
             <div>
                 <p class="titre ">Equipe</p>
@@ -402,7 +420,7 @@
     <!-- ====================================end Pricing=================================== =====-->
 
     <!-- ====================================Start footer=================================== =====-->
-    <footer>
+    <footer id="contact">
         <div class="f-container">
             <div class="sponsor">
                 <div class="s-img">
@@ -422,7 +440,8 @@
                         </div>
                     </div>
                     <div>
-                        <p>Hypernova est Une agence de communication qui se charge de la communication interne pour fédérer le personnel aux objectifs d’entreprise, collectivité, association…
+                        <p>Hypernova est Une agence de communication qui se charge de la communication interne pour
+                            fédérer le personnel aux objectifs d’entreprise, collectivité, association…
                             <br>Nous sommes ravies de vous servir
                             <br>Soyez la bienvenue
                             <br>N’hésiter pas de nous contacter</p>
@@ -463,7 +482,6 @@
                 </div>
                 <div class="copyright"> Copyright © 2020 All rights reserved by Hypernova Agency</div>
             </div>
-
     </footer>
     <!-- ====================================End footer=================================== =====-->
 </body>
