@@ -126,7 +126,7 @@ a {
 .container1 .service-flex-cards .service-cards .flip-card .service-cards-part2 .service-titel {
   color: #000;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
   padding: .9em .2em 0;
   margin-top: 3%;
@@ -303,11 +303,12 @@ a {
     width: 100%;
   }
   .container1 article:first-child h2 {
+    font-size: 1.5em;
     margin-top: 10%;
   }
   .container1 article:first-child .service-sous-titre {
-    margin: auto;
-    width: 70%;
+    margin: 2% auto;
+    width: 80%;
   }
   .container1 .service-flex-cards {
     display: block;

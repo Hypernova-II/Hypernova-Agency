@@ -2,57 +2,40 @@ header {
   font-family: 'Poppins', sans-serif;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   background-image: url(../../img/testbg.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-  -webkit-animation: slider 30s infinite;
-          animation: slider 30s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slider 15s infinite;
+          animation: slider 15s infinite;
 }
 
 @-webkit-keyframes slider {
-  15% {
-    background-image: url(../../img/testbg2.jpg);
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
   }
-  30% {
-    background-image: url(../../img/testbg3.png);
-  }
-  45% {
-    background-image: url(../../img/testbg4.png);
-  }
-  60% {
-    background-image: url(../../img/testbg5.png);
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
   }
   75% {
-    background-image: url(../../img/testbg6.png);               
+    background-image: url(../../img/testbg3.jpg);
   }
- 90% {
-    background-image: url(../../img/testbg7.png);
-  }   
   100% {
     background-image: url(../../img/testbg.jpg);
   }
 }
 
 @keyframes slider {
-  15% {
-    background-image: url(../../img/testbg2.png);
+  25% {
+    background-image: url(../../img/teastbg2.jpg);
   }
-  30% {
-    background-image: url(../../img/testbg3.png);
-  }
-  45% {
-    background-image: url(../../img/testbg4.png);
-  }
-  60% {
-    background-image: url(../../img/testbg5.png);
+  50% {
+    background-image: url(../../img/bg-header4.jpg);
   }
   75% {
-    background-image: url(../../img/testbg6.png);               
+    background-image: url(../../img/testbg3.jpg);
   }
- 90% {
-    background-image: url(../../img/testbg7.png);
-  }   
   100% {
     background-image: url(../../img/testbg.jpg);
   }
