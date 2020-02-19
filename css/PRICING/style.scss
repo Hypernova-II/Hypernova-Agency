@@ -13,7 +13,20 @@ body {
 
     .title {
         text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 40px;
+        color: #658DA7;
+        hr{
+            width: 270px;
+            margin: auto;
+            height: 3px;
+            background: #658DA7;
+            border-radius: 1rem;
+            
+        }
     }
+   
 
     .person {
         display: grid;
@@ -40,10 +53,12 @@ body {
 
     .commentaire {
         margin: 1rem;
-        padding: 1rem;
-        background-color: lightgray;
+        background-color: #f0f0f0;
         border-radius: 20px;
+        p{
+            padding: 2rem;
 
+        }
 
     }
 
@@ -73,7 +88,7 @@ body {
     // RESPONSIVE-desktop
     @include desktop {
         grid-template-columns: 30% 60% 10%;
-        font-size: 22px;
+        font-size: 16px;
         margin-right: 3rem;
 
         .title {
@@ -96,10 +111,23 @@ body {
 
     .title {
         text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 40px;
+        color: #658DA7;
+        hr{
+            width: 192px;
+            margin: auto;
+            height: 3px;
+            background: #658DA7;
+            border-radius: 1rem;
+    
+        }
         @include desktop{
             font-size: 32px;
         }
     }
+   
 
     .s1,
     .s2,

@@ -12,6 +12,18 @@ body {
 
 .testemoinial .title {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  color: #658DA7;
+}
+
+.testemoinial .title hr {
+  width: 270px;
+  margin: auto;
+  height: 3px;
+  background: #658DA7;
+  border-radius: 1rem;
 }
 
 .testemoinial .person {
@@ -42,9 +54,12 @@ body {
 
 .testemoinial .commentaire {
   margin: 1rem;
-  padding: 1rem;
-  background-color: lightgray;
+  background-color: #f0f0f0;
   border-radius: 20px;
+}
+
+.testemoinial .commentaire p {
+  padding: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -81,7 +96,7 @@ body {
   .testemoinial {
     -ms-grid-columns: 30% 60% 10%;
         grid-template-columns: 30% 60% 10%;
-    font-size: 22px;
+    font-size: 16px;
     margin-right: 3rem;
   }
   .testemoinial .title {
@@ -105,6 +120,18 @@ body {
 
 .pricing .title {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 40px;
+  color: #658DA7;
+}
+
+.pricing .title hr {
+  width: 192px;
+  margin: auto;
+  height: 3px;
+  background: #658DA7;
+  border-radius: 1rem;
 }
 
 @media only screen and (min-width: 1440px) {

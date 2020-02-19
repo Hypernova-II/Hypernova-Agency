@@ -1,30 +1,11 @@
 <?php 
 $name = $phone = $email = $message = "";
-// var_dump($_GET);
-// exit;
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
    
     $name = $_POST['name'];
-   
     $phone = $_POST['phone']; 
     $email = $_POST['email'];
     $message = $_POST['message'];
-    // $ifS = false;
-    // if(empty($name)){
-    //     $ifS = false;
-    // }
-    // if(empty($phone)){
-    //     $ifS = false;
-    // }
-    // if(empty($email)){
-    //     $ifS = false;
-    // }
-    // if(empty($message)){
-    //     $ifS = false;
-    // }
-    // if($ifS == false){
-    //     $ifS = true;
-    // }
     $email_from = 'info@hypernova.com';
 
     $email_subject = "New form submission";
@@ -45,10 +26,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     header("Location: index.html");
  
 }
-
-   
-
-   
-
-  
+ 
 ?>

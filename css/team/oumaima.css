@@ -95,7 +95,6 @@
       
   }
   .nos-clients{
-             background-color: lightgray;
              margin-top: 4rem;
              padding: 4rem 0rem 4rem 0rem;
   }
@@ -152,7 +151,7 @@
 }
 
 .nos-clients {
-    background-color: lightgray;
+    background-color: #F0F0F0;
     margin-top: 2rem;
 }
 
